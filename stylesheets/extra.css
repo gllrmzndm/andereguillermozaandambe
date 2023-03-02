@@ -1,0 +1,22 @@
+@media screen and (min-width: 600px) {
+  .hero_image {
+  width: 100%;
+  height: auto;
+  border-bottom: solid;
+  border-color: greenyellow;
+  }
+}
+
+[data-md-color-scheme="youtube"] {
+    --md-primary-fg-color:        #EE0F0F;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark:  #90030C;
+  }
+
+[data-md-color-scheme="nfs-pink"] {
+    --md-primary-fg-color:        #f431a7;
+    --md-primary-fg-color--light: #000000;
+    --md-primary-fg-color--dark:  #f431a7;
+    --md-typeset-a-color: #f431a7;
+    --md-accent-fg-color: #5b05a8;
+  }

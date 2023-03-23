@@ -1,6 +1,6 @@
 My own new personal website.
 
-![zipping](docs/assets/images/gllrm.jpg)
+[![gllrm.jpg](https://i.postimg.cc/vBhdN965/gllrm.jpg)](https://postimg.cc/jwD9WDcj)
 
 ---
 

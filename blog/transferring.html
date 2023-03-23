@@ -9,26 +9,30 @@
         <meta name="description" content="Personal website.">
       
       
-      
-        <link rel="canonical" href="https://andereguillermozaandam.be/index.html">
-      
+        <meta name="author" content="Guillermo Zaandam">
       
       
-        <link rel="next" href="blog/passwordless_ssh_windows_linux.html">
+        <link rel="canonical" href="https://andereguillermozaandam.be/blog/transferring.html">
       
-      <link rel="icon" href="assets/logo_guillermo.png">
+      
+        <link rel="prev" href="starting-my-blog.html">
+      
+      
+        <link rel="next" href="under-the-hood-changes.html">
+      
+      <link rel="icon" href="../assets/logo_guillermo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
     
     
       
-        <title>Guillermo Zaandam</title>
+        <title>Transferring files from my Linux VM to my localhost - Guillermo Zaandam</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.113286f1.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.113286f1.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -44,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -67,11 +71,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Home" >
+        <meta  property="og:title"  content="Transferring files from my Linux VM to my localhost - Guillermo Zaandam" >
       
         <meta  property="og:description"  content="Personal website." >
       
-        <meta  property="og:image"  content="https://andereguillermozaandam.be/assets/images/social/index.png" >
+        <meta  property="og:image"  content="https://andereguillermozaandam.be/assets/images/social/blog/transferring.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -79,15 +83,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://andereguillermozaandam.be/index.html" >
+        <meta  property="og:url"  content="https://andereguillermozaandam.be/blog/transferring.html" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Home" >
+        <meta  name="twitter:title"  content="Transferring files from my Linux VM to my localhost - Guillermo Zaandam" >
       
         <meta  name="twitter:description"  content="Personal website." >
       
-        <meta  name="twitter:image"  content="https://andereguillermozaandam.be/assets/images/social/index.png" >
+        <meta  name="twitter:image"  content="https://andereguillermozaandam.be/assets/images/social/blog/transferring.png" >
       
     
     
@@ -112,6 +116,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#for-the-people-that-dont-want-to-read" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -122,9 +131,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="Guillermo Zaandam" class="md-header__button md-logo" aria-label="Guillermo Zaandam" data-md-component="logo">
+    <a href="../index.html" title="Guillermo Zaandam" class="md-header__button md-logo" aria-label="Guillermo Zaandam" data-md-component="logo">
       
-  <img src="assets/logo_guillermo.png" alt="logo">
+  <img src="../assets/logo_guillermo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -140,7 +149,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Transferring files from my Linux VM to my localhost
             
           </span>
         </div>
@@ -238,9 +247,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="Guillermo Zaandam" class="md-nav__button md-logo" aria-label="Guillermo Zaandam" data-md-component="logo">
+    <a href="../index.html" title="Guillermo Zaandam" class="md-nav__button md-logo" aria-label="Guillermo Zaandam" data-md-component="logo">
       
-  <img src="assets/logo_guillermo.png" alt="logo">
+  <img src="../assets/logo_guillermo.png" alt="logo">
 
     </a>
     Guillermo Zaandam
@@ -254,19 +263,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         Home
       </a>
-      
     </li>
   
 
@@ -277,14 +278,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -293,7 +296,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Blog
@@ -306,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/passwordless_ssh_windows_linux.html" class="md-nav__link">
+      <a href="passwordless_ssh_windows_linux.html" class="md-nav__link">
         How to establish a passwordless SSH Connection between Windows and Linux
       </a>
     </li>
@@ -320,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/save-changes-after-reload.html" class="md-nav__link">
+      <a href="save-changes-after-reload.html" class="md-nav__link">
         Save CSS changes after page reload (Chrome)
       </a>
     </li>
@@ -334,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/starting-my-blog.html" class="md-nav__link">
+      <a href="starting-my-blog.html" class="md-nav__link">
         Starting my blog
       </a>
     </li>
@@ -346,11 +349,109 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="blog/transferring.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Transferring files from my Linux VM to my localhost
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="transferring.html" class="md-nav__link md-nav__link--active">
         Transferring files from my Linux VM to my localhost
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#for-the-people-that-dont-want-to-read" class="md-nav__link">
+    For the people that don't want to read...
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    Visual Studio Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zipping-files" class="md-nav__link">
+    Zipping files
+  </a>
+  
+    <nav class="md-nav" aria-label="Zipping files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-installing-zip" class="md-nav__link">
+    1. Installing zip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-command-that-i-use-to-zip-files-on-rocky-linux" class="md-nav__link">
+    2. The command that I use to zip files on Rocky Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-your-project-with-visual-studio-code" class="md-nav__link">
+    Download your project with Visual Studio Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Download your project with Visual Studio Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-open-your-visual-studio-code-but-dont-go-to-your-project-go-one-directory-above-project-in-the-visual-studio-code-explorer-ctrl-shift-e" class="md-nav__link">
+    1. Open your Visual Studio Code, but... don't go to your project go one directory above project in the Visual Studio Code Explorer (CTRL + SHIFT E)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-left-click-on-your-projectdirectory-and-download-the-project" class="md-nav__link">
+    2. Left click on your project/directory and download the project.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -362,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/under-the-hood-changes.html" class="md-nav__link">
+      <a href="under-the-hood-changes.html" class="md-nav__link">
         Under the hood changes
       </a>
     </li>
@@ -376,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/using-ntfs-bitlocker.html" class="md-nav__link">
+      <a href="using-ntfs-bitlocker.html" class="md-nav__link">
         Using NTFS Bitlocker external SSD on Fedora
       </a>
     </li>
@@ -408,6 +509,82 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#for-the-people-that-dont-want-to-read" class="md-nav__link">
+    For the people that don't want to read...
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    Visual Studio Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zipping-files" class="md-nav__link">
+    Zipping files
+  </a>
+  
+    <nav class="md-nav" aria-label="Zipping files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-installing-zip" class="md-nav__link">
+    1. Installing zip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-command-that-i-use-to-zip-files-on-rocky-linux" class="md-nav__link">
+    2. The command that I use to zip files on Rocky Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-your-project-with-visual-studio-code" class="md-nav__link">
+    Download your project with Visual Studio Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Download your project with Visual Studio Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-open-your-visual-studio-code-but-dont-go-to-your-project-go-one-directory-above-project-in-the-visual-studio-code-explorer-ctrl-shift-e" class="md-nav__link">
+    1. Open your Visual Studio Code, but... don't go to your project go one directory above project in the Visual Studio Code Explorer (CTRL + SHIFT E)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-left-click-on-your-projectdirectory-and-download-the-project" class="md-nav__link">
+    2. Left click on your project/directory and download the project.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -421,299 +598,28 @@
                   
 
 
-  <h1>Home</h1>
+  <h1>Transferring files from my Linux VM to my localhost</h1>
 
-<p>
-
-
-<style>
-    .md-typeset .blog-post:first-of-type h3 {
-        margin-top: 0;
-    }
-
-    .md-typeset .blog-post-title {
-        margin-bottom: 0;
-    }
-
-    .md-typeset .blog-post-extra {
-        color: var(--md-default-fg-color--light);
-    }
-
-    .md-typeset .blog-center {
-        text-align: center;
-    }
-
-    .md-typeset .blog-pagination {
-        display: inline-block;
-        margin-top: 20px;
-    }
-
-    .md-typeset .blog-pagination a {
-        color: var(--md-typeset-color);
-        float: left;
-        padding: .25em 1em;
-        text-decoration: none;
-        border-radius: 1em;
-        margin-left: .25em;
-        margin-right: .25em;
-        transition: all .15s ease-in-out;
-    }
-
-    .md-typeset .blog-pagination a.active {
-        background-color: var(--md-typeset-a-color);
-        color: white;
-        font-weight: bold;
-    }
-
-    .md-typeset .blog-pagination a:hover:not(.active) {
-        background-color: #dddddda1;
-    }
-
-    .md-typeset .blog-hidden {
-        display: none;
-    }
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <style>
-    .md-typeset .blogging-tags-grid {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 5px;
-    }
-
-    .md-typeset .blogging-tag {
-        color: var(--md-typeset-color);
-        background-color: var(--md-typeset-code-color);
-    }
-
-    .md-typeset .blogging-tag code {
-        border-radius: 5px;
-    }
-</style>
-
-    
-
-
-
-
-
-
-
-
-<div class="pages">
-    
-        
-        <div class="page" id="page1">
-
-            
-                
-                
-                
-                
-
-                
-                
-
-                
-                
-                    
-                
-                
-                <div class="blog-post">
-    <h3 class="blog-post-title">
-        <a class="link" href="https://andereguillermozaandam.be/blog/transferring.html">Transferring files from my Linux VM to my localhost</a>
-    </h3>
-    
-    <p class="blog-post-description">
-        
-    </p>
-    <div class="blog-post-extra">
-        Published at: 23/03/2023, 21:47
-    </div>
-    <hr />
-</div>
-
-                
-            
-                
-                
-                
-                
-
-                
-                
-
-                
-                
-                    
-                
-                
-                <div class="blog-post">
-    <h3 class="blog-post-title">
-        <a class="link" href="https://andereguillermozaandam.be/blog/passwordless_ssh_windows_linux.html">How to establish a passwordless SSH Connection between Windows and Linux</a>
-    </h3>
-    
-    <p class="blog-post-description">
-        
-    </p>
-    <div class="blog-post-extra">
-        Published at: 04/03/2023, 20:59
-    </div>
-    <hr />
-</div>
-
-                
-            
-                
-                
-                
-                
-
-                
-                
-
-                
-                
-                    
-                
-                
-                <div class="blog-post">
-    <h3 class="blog-post-title">
-        <a class="link" href="https://andereguillermozaandam.be/blog/save-changes-after-reload.html">Save CSS changes after page reload (Chrome)</a>
-    </h3>
-    
-    <p class="blog-post-description">
-        
-    </p>
-    <div class="blog-post-extra">
-        Published at: 26/02/2023, 22:54
-    </div>
-    <hr />
-</div>
-
-                
-            
-                
-                
-                
-                
-
-                
-                
-
-                
-                
-                    
-                
-                
-                <div class="blog-post">
-    <h3 class="blog-post-title">
-        <a class="link" href="https://andereguillermozaandam.be/blog/starting-my-blog.html">Starting my blog</a>
-    </h3>
-    
-    <p class="blog-post-description">
-        
-    </p>
-    <div class="blog-post-extra">
-        Published at: 26/02/2023, 22:54
-    </div>
-    <hr />
-</div>
-
-                
-            
-                
-                
-                
-                
-
-                
-                
-
-                
-                
-                    
-                
-                
-                <div class="blog-post">
-    <h3 class="blog-post-title">
-        <a class="link" href="https://andereguillermozaandam.be/blog/under-the-hood-changes.html">Under the hood changes</a>
-    </h3>
-    
-    <p class="blog-post-description">
-        
-    </p>
-    <div class="blog-post-extra">
-        Published at: 26/02/2023, 22:54
-    </div>
-    <hr />
-</div>
-
-                
-            
-                
-                
-                
-                
-
-                
-                
-
-                
-                
-                    
-                
-                
-                <div class="blog-post">
-    <h3 class="blog-post-title">
-        <a class="link" href="https://andereguillermozaandam.be/blog/using-ntfs-bitlocker.html">Using NTFS Bitlocker external SSD on Fedora</a>
-    </h3>
-    
-    <p class="blog-post-description">
-        
-    </p>
-    <div class="blog-post-extra">
-        Published at: 26/02/2023, 22:54
-    </div>
-    <hr />
-</div>
-
-                
-            
-        </div>
-    
-</div>
-
-<div class="blog-center blog-hidden">
-    <div class="blog-pagination " id="blog-pagination">
-        
-            
-                
-            
-            <a class="page-number" href="">1</a>
-        
-    </div>
-    
-        <div>Total <b>6</b> posts.</div>
-    
-</div></p>
+<p>Hey Guillermo here,</p>
+<p>So right now, I did another project and my files are being held hostage in a Linux Virtual Machine (Rocky Linux) and I want to duplicate my project for back-up and testing purposes. So I needed way to back-up my project.</p>
+<h2 id="for-the-people-that-dont-want-to-read">For the people that don't want to read...</h2>
+<p>Visual Studo Code can download your projects.
+Just SSH in your server, go one directory up and select your folder to download. I would suggest to tar or zip your files first.
+zip, download, done.</p>
+<h2 id="visual-studio-code"><strong>Visual Studio Code</strong></h2>
+<p>Since Visual Studio Code is doing the majority of the work like forwarding my project to localhost. I figured that I could download my project and bring it to my local host. (my own device)</p>
+<h2 id="zipping-files"><strong>Zipping files</strong></h2>
+<p>First I zip my files, since it takes less time to transfer a lot of small files to my host or any other device.</p>
+<p>You can also I use tar, but from the top of my mind I am not sure if Windows 10 and Windows 11 will support tar out of the box. But you can download 7-Zip and use that program to pack and unpack tar files.</p>
+<h3 id="1-installing-zip">1. Installing zip</h3>
+<p><code>sudo dnf install zip -y</code></p>
+<h3 id="2-the-command-that-i-use-to-zip-files-on-rocky-linux">2. The command that I use to zip files on Rocky Linux</h3>
+<p><code>`zip -0 -r whatever.zip ./mkdocsguillermo.zip</code></p>
+<p><img alt="zipping" src="../assets/blogassets/transferring/zipping.gif" /></p>
+<h2 id="download-your-project-with-visual-studio-code">Download your project with Visual Studio Code</h2>
+<h3 id="1-open-your-visual-studio-code-but-dont-go-to-your-project-go-one-directory-above-project-in-the-visual-studio-code-explorer-ctrl-shift-e">1. Open your Visual Studio Code, but... <strong>don't go to your project</strong> go <strong>one directory above project</strong> in the Visual Studio Code Explorer (CTRL + SHIFT E)</h3>
+<h3 id="2-left-click-on-your-projectdirectory-and-download-the-project">2. Left click on your project/directory and download the project.</h3>
+<p><img alt="vscode_downloading" src="../assets/blogassets/transferring/vsc_downloading.gif" /></p>
 
 
   
@@ -742,68 +648,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "header.autohide", "search.highlight", "search.share"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "header.autohide", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      <script src="../assets/javascripts/bundle.2a6f1dda.min.js"></script>
       
     
   </body>
-</html><script>var currentPage = 0
-const lastComponent = window.location.href.split("/").slice(-1).pop()
-
-if (lastComponent && lastComponent.slice(0, 7) == "#blog-p") {
-  const page = parseInt(lastComponent.slice(7))
-  if (page) {
-    currentPage = page - 1
-  }
-}
-
-function scrollToTop() {
-  setTimeout(function () {
-    window.scrollTo(0, 0);
-  }, 100);
-}
-
-var pagination = document.getElementById("blog-pagination");
-if (pagination) {
-  var links = pagination.getElementsByClassName("page-number");
-  if (links.length) {
-    for (var i = 0; i < links.length; i++) {
-      // Toggle pagination highlight
-      links[i].addEventListener("click", function () {
-        var current = pagination.getElementsByClassName("active");
-        if (current.length) {
-          current[0].className = current[0].className.replace(
-            " active", ""
-          );
-        }
-        this.className += " active";
-
-        // Togglg visibility of pages
-        const destPage = parseInt(this.textContent)
-        var pages = document.getElementsByClassName("page")
-        if (destPage && pages.length) {
-          for (var j = 0; j < pages.length; j++) {
-            const pageId = parseInt(pages[j].id.replace("page", ""))
-            if (pageId != destPage) {
-              // This is not the destination page
-              if (!pages[j].className.includes("blog-hidden")) {
-                pages[j].className += " blog-hidden"
-              }
-            } else {
-              // This is the destination page
-              pages[j].className = pages[j].className.replace(" blog-hidden", "")
-            }
-          }
-          scrollToTop();
-        }
-      });
-    }
-    links[currentPage].className += " active"
-    if (currentPage > 0) {
-      links[currentPage].click();
-    }
-  }
-}
-</script>
+</html>

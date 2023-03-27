@@ -2,15 +2,7 @@
   .hero_image {
     width: 100%;
     height: auto;
-    border-bottom: solid;
-    border-color: greenyellow;
   }
-}
-
-:root {}
-
-.twitter {
-  color: #1DA1F2;
 }
 
 [data-md-color-scheme="youtube"] {
@@ -34,4 +26,31 @@
   --md-typeset-a-color: #f431a7;
   --md-accent-fg-color: #5b05a8;
   --md-primary-bg-color--light: hsla(0, 11%, 17%, 0.7);
+}
+
+@keyframes colorchange {
+  0% {
+    border-color: #f52894;
+  }
+
+  50% {
+    border-color: #700fe7;
+  }
+
+  100% {
+    border-color: #f52894;
+  }
+}
+
+.hero_image img {
+  border: 4px solid;
+  border-color: #ff0080;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+  animation: colorchange 10s;
+  animation-iteration-count: infinite;
+}
+
+.hero_image img:hover {
+  filter: blur(2px);
 }

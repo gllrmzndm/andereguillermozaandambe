@@ -54,3 +54,7 @@
 .hero_image img:hover {
   filter: blur(2px);
 }
+
+p img {
+  background-color: #f431a71a;
+}

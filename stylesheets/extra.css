@@ -1,7 +1,19 @@
 @media screen and (min-width: 600px) {
   .hero_image {
     width: 100%;
-    height: auto;
+    height: 100%;
+  }
+  .spotify {
+
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .hero_image {
+    width: 100%;
+    height: 17vh;
+  }
+  .spotify {
   }
 }
 
@@ -14,10 +26,11 @@
 
 [data-md-color-scheme="nfs-pink"] {
   --md-primary-fg-color: #f431a7;
-  --md-primary-fg-color--light: #000000;
+  --md-primary-fg-color--light: #ffffff;
   --md-primary-fg-color--dark: #f431a7;
   --md-typeset-a-color: #f431a7;
   --md-accent-fg-color: #5b05a8;
+
 }
 
 [data-md-color-scheme="nfs-light"] {

@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://andereguillermozaandam.be/index.html</loc>
-         <lastmod>2023-07-27</lastmod>
+         <lastmod>2023-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://andereguillermozaandam.be/blog/managing_6000_bookmarks.html</loc>
+         <lastmod>2023-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://andereguillermozaandam.be/blog/passwordless_ssh_windows_linux.html</loc>
-         <lastmod>2023-07-27</lastmod>
+         <lastmod>2023-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://andereguillermozaandam.be/blog/save-changes-after-reload.html</loc>
-         <lastmod>2023-07-27</lastmod>
+         <lastmod>2023-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://andereguillermozaandam.be/blog/starting-my-blog.html</loc>
-         <lastmod>2023-07-27</lastmod>
+         <lastmod>2023-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://andereguillermozaandam.be/blog/transferring.html</loc>
-         <lastmod>2023-07-27</lastmod>
+         <lastmod>2023-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://andereguillermozaandam.be/blog/under-the-hood-changes.html</loc>
-         <lastmod>2023-07-27</lastmod>
+         <lastmod>2023-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://andereguillermozaandam.be/blog/using-ntfs-bitlocker.html</loc>
-         <lastmod>2023-07-27</lastmod>
+         <lastmod>2023-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

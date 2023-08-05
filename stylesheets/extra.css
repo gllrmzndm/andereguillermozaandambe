@@ -1,3 +1,6 @@
+  /* Normal size screen */
+
+
 @media screen and (min-width: 600px) {
   .hero_image {
     width: 100%;
@@ -6,7 +9,26 @@
   .spotify {
 
   }
+
+.profile_picture_guillermo {
+  display: block; 
+  width: 35%;
+  height: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #f431a7;
 }
+
+.intro_text {
+  /* font-size: medium;
+  text-align: left; */
+}
+
+}
+
+/* Smaller displays e.g. mobile */
 
 @media screen and (max-width: 599px) {
   .hero_image {
@@ -21,20 +43,20 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
+    border-style: solid;
+    border-color: #f431a7;
+  }
+
+  .intro_text {
+    font-size: smaller;
+    text-align: left;
   }
 
   .spotify {
   }
 }
 
-.profile_picture_guillermo {
-  display: block; 
-  width: 35%;
-  height: 35%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-}
+
 
 [data-md-color-scheme="youtube"] {
   --md-primary-fg-color: #EE0F0F;
@@ -44,8 +66,9 @@
 }
 
 [data-md-color-scheme="nfs-pink"] {
+  --md-default-bg-color:#fcfcfc;
   --md-primary-fg-color: #f431a7;
-  --md-primary-fg-color--light: #ffffff;
+  --md-primary-fg-color--light: #747474;
   --md-primary-fg-color--dark: #f431a7;
   --md-typeset-a-color: #f431a7;
   --md-accent-fg-color: #5b05a8;

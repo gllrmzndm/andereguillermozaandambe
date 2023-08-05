@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://guillermozaandam.nl/blog/miscellaneous_web_development.html</loc>
+         <lastmod>2023-08-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://guillermozaandam.nl/blog/passwordless_ssh_windows_linux.html</loc>
          <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>

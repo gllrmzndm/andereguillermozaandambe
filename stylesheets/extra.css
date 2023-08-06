@@ -1,5 +1,4 @@
-  /* Normal size screen */
-
+/* Normal size screen */
 
 @media screen and (min-width: 600px) {
   .hero_image {
@@ -10,23 +9,21 @@
 
   }
 
-.profile_picture_guillermo {
-  display: block;
-  width: 35%;
-  height: 35%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: #f431a7;
-  
+  .profile_picture_guillermo {
+    display: block;
+    width: 35%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border-style: solid;
+    color: #f431a7;
 }
 
-.intro_text {
-  /* font-size: medium;
-  text-align: left; */
-}
-
+  .intro_text {
+    /* font-size: medium;
+    text-align: left; */
+  }
 }
 
 

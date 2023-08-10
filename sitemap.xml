@@ -16,11 +16,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://guillermozaandam.nl/blog/learning_from_video_games.html</loc>
-         <lastmod>2023-08-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://guillermozaandam.nl/blog/lenovo_tools.html</loc>
          <lastmod>2023-08-10</lastmod>
          <changefreq>daily</changefreq>
@@ -62,6 +57,11 @@
     </url>
     <url>
          <loc>https://guillermozaandam.nl/blog/using-ntfs-bitlocker.html</loc>
+         <lastmod>2023-08-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://guillermozaandam.nl/blog/you_can_learn_from_games.html</loc>
          <lastmod>2023-08-10</lastmod>
          <changefreq>daily</changefreq>
     </url>

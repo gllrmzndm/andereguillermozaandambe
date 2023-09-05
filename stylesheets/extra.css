@@ -8,6 +8,11 @@
   .spotify {
   }
 
+  #listeningspotify {
+    text-align: center;
+    color:#f431a7;
+  }
+
   .profile_picture_guillermo {
     display: block;
     width: 35%;

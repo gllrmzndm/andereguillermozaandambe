@@ -57,6 +57,13 @@
 
   .spotify {
   }
+
+  #listeningspotify {
+    text-align: center;
+    color: #f431a7;
+    font-size: smaller;
+  }
+  
 }
 
 

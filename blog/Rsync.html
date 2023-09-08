@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://guillermozaandam.nl/blog/my_windows_backup_solution.html">
+        <link rel="canonical" href="https://guillermozaandam.nl/blog/Rsync.html">
       
       
-        <link rel="prev" href="miscellaneous_web_development.html">
+        <link rel="prev" href="../index.html">
       
       
-        <link rel="next" href="passwordless_ssh_windows_linux.html">
+        <link rel="next" href="Windows-boot-transition.html">
       
       <link rel="icon" href="../assets/logo_guillermo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
     
     
       
-        <title>My Windows Back-up solution - Guillermo Zaandam</title>
+        <title>Making back-ups as simple as possible (Rsync) - Guillermo Zaandam</title>
       
     
     
@@ -69,11 +69,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="My Windows Back-up solution - Guillermo Zaandam" >
+        <meta  property="og:title"  content="Making back-ups as simple as possible (Rsync) - Guillermo Zaandam" >
       
         <meta  property="og:description"  content="Personal website." >
       
-        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/my_windows_backup_solution.png" >
+        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/Rsync.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -81,23 +81,23 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/my_windows_backup_solution.html" >
+        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/Rsync.html" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="My Windows Back-up solution - Guillermo Zaandam" >
+        <meta  name="twitter:title"  content="Making back-ups as simple as possible (Rsync) - Guillermo Zaandam" >
       
         <meta  name="twitter:description"  content="Personal website." >
       
-        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/my_windows_backup_solution.png" >
+        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/Rsync.png" >
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="My Windows Back-up solution - Guillermo Zaandam" >
+        <meta  property="og:title"  content="Making back-ups as simple as possible (Rsync) - Guillermo Zaandam" >
       
         <meta  property="og:description"  content="Personal website." >
       
-        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/my_windows_backup_solution.png" >
+        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/Rsync.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -105,15 +105,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/my_windows_backup_solution.html" >
+        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/Rsync.html" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="My Windows Back-up solution - Guillermo Zaandam" >
+        <meta  name="twitter:title"  content="Making back-ups as simple as possible (Rsync) - Guillermo Zaandam" >
       
         <meta  name="twitter:description"  content="Personal website." >
       
-        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/my_windows_backup_solution.png" >
+        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/Rsync.png" >
       
     
     
@@ -139,7 +139,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#my-experience" class="md-skip">
+        <a href="#story" class="md-skip">
           Skip to content
         </a>
       
@@ -171,7 +171,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              My Windows Back-up solution
+              Making back-ups as simple as possible (Rsync)
             
           </span>
         </div>
@@ -323,11 +323,79 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="Rsync.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Making back-ups as simple as possible (Rsync)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Rsync.html" class="md-nav__link md-nav__link--active">
         Making back-ups as simple as possible (Rsync)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rsyncexcludetxt" class="md-nav__link">
+    Rsyncexclude.txt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-windows" class="md-nav__link">
+    For Windows
+  </a>
+  
+    <nav class="md-nav" aria-label="For Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rynscps1-powershell-executable" class="md-nav__link">
+    rynsc.ps1 (Powershell executable)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rsyncexcludetxt-windows" class="md-nav__link">
+    Rsyncexclude.txt (Windows)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -421,62 +489,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          My Windows Back-up solution
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="my_windows_backup_solution.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="my_windows_backup_solution.html" class="md-nav__link">
         My Windows Back-up solution
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#my-experience" class="md-nav__link">
-    My experience
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backup-and-restore-improvements-windows-10-and-windows-11" class="md-nav__link">
-    Backup and Restore improvements Windows 10 and Windows 11
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#my-own-solution" class="md-nav__link">
-    My own solution
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -631,6 +648,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -639,23 +658,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#my-experience" class="md-nav__link">
-    My experience
+  <a href="#rsyncexcludetxt" class="md-nav__link">
+    Rsyncexclude.txt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#backup-and-restore-improvements-windows-10-and-windows-11" class="md-nav__link">
-    Backup and Restore improvements Windows 10 and Windows 11
+  <a href="#for-windows" class="md-nav__link">
+    For Windows
+  </a>
+  
+    <nav class="md-nav" aria-label="For Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rynscps1-powershell-executable" class="md-nav__link">
+    rynsc.ps1 (Powershell executable)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#my-own-solution" class="md-nav__link">
-    My own solution
+        
+          <li class="md-nav__item">
+  <a href="#rsyncexcludetxt-windows" class="md-nav__link">
+    Rsyncexclude.txt (Windows)
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -674,49 +706,77 @@
                   
 
 
-  <h1>My Windows Back-up solution</h1>
-
-<p><img alt="Windows back-up" src="../assets/blogassets/my_windows_backup_solution/back-up.png" /></p>
-<h2 id="my-experience">My experience</h2>
-<p>One of the things that I don't like about Windows is the standard back-up solution provided by Windows.
-In my experience with customers, the tool wasn't reliable enough to use it widely with customers.</p>
-<p>Especially the restore function didn't do well, the same is true Timemachine on MacOS.</p>
-<h2 id="backup-and-restore-improvements-windows-10-and-windows-11">Backup and Restore improvements Windows 10 and Windows 11</h2>
-<p>But they are working on new back-up feature in both <a href="https://twitter.com/PhantomOfEarth/status/1690143092224266244?s=20">Windows</a> 10 and <a href="https://blogs.windows.com/windows-insider/2023/05/24/announcing-windows-11-insider-preview-build-23466/">Windows 11</a>.</p>
-<p><em>Building on the app restore feature we announced last year, we are introducing additional backup and restore capabilities in this build to make moving to a new PC easier than ever and to help app developers retain users across this new PC transition. The goal of these changes is to land users on a desktop that feels familiar to them and get them back to productivity within minutes on their new PC.</em></p>
-<h2 id="my-own-solution">My own solution</h2>
-<p>My own solution that is manual and not can be used on any systems where is <code>rsync</code> available.</p>
-<p>I first that with the files and folders that I don't want to back-up and these are...</p>
-<p>One of the files called <code>rsyncexclude.txt</code>.</p>
-<p>And it looks like this:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>AppData/Local/Packages
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>AppData/Local/
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>&quot;C:\Users\guill\VirtualBox VMs&quot;
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>.vscode/extensions/*
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>AppData/Roaming/Code/
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>AppData/Roaming/EaseUS/*
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>AppData/Roaming/*
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>AppData/LocalLow/*
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>VirtualBox VMs/
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>.vagrant.d/*
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>.config/
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>.vscode
-</span></code></pre></div>
+<p>rsync -- a fast, versatile, remote (and local) file-copying tool</p>
+<p>Rsync is a fast and extraordinarily versatile file copying tool. It can copy locally, to/from another host over any remote shell, or to/from a remote rsync daemon. It offers a large number of options that control every aspect of its behavior and permit very flexible specification of the set of files to be copied. It is famous for its delta-transfer algorithm, which reduces the amount of data sent over the network by sending only the differences between the source files and the existing files in the destination. Rsync is widely used for backups and mirroring and as an improved copy command for everyday use.</p>
+<p>Rsync finds files that need to be transferred using a lqquick checkrq algorithm (by default) that looks for files that have changed in size or in last-modified time. Any changes in the other preserved attributes (as requested by options) are made on the destination file directly when the quick check indicates that the file's data does not need to be updated.</p>
+<p>Some of the additional features of rsync are:</p>
+<ul>
+<li>support for copying links, devices, owners, groups, and permissions</li>
+<li>exclude and exclude-from options similar to GNU tar</li>
+<li>a CVS exclude mode for ignoring the same files that CVS would ignore</li>
+<li>can use any transparent remote shell, including ssh or rsh</li>
+<li>does not require super-user privileges</li>
+<li>pipelining of file transfers to minimize latency costs</li>
+<li>support for anonymous or authenticated rsync daemons (ideal for mirroring)</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can make a text file called <code>rsyncexlude.txt</code> and copy the excluded files and folders into the text editor.</p>
+<p>Rsync copies files either to or from a remote host, or locally on the current host (it does not support copying files between two remote hosts).
+More info at: https://linux.die.net/man/1/rsync</p>
 </div>
-<p>The next one is my powershell script.</p>
-<p>Called: rsync.ps1</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>rsync -ahv --exclude-from=&quot;/cygdrive/c/Users/guill/rsyncexclude.txt&quot; &quot;/cygdrive/c/Users/guill/&quot; &quot;/cygdrive/D/GUILLERMO/EXTERNALDEVICE/SAMSUNGSHIELDT7&quot;
+<hr />
+<h1 id="story">Story</h1>
+<p>After many back-up solutions, I've found the best one that suits my needs.
+One that copy the "raw" files instead of making of compressing it with non-standard tools. (my assumption) so when I need to get those files back, I can open the File Explorer and copy it right back, without installing the back-up program itself.</p>
+<p>The way I use Rsync is very simple... let me explain the explain the options.</p>
+<ul>
+<li>a is for archiving [0]</li>
+<li>v is for verbosity</li>
+<li>h is human readable</li>
+<li>p is preserve permission</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>rsync<span class="w"> </span>-avhp<span class="w"> </span>--exclude-from<span class="o">=</span><span class="s2">&quot;/home/guillermo/rsyncexclude.txt&quot;</span><span class="w"> </span>/home/guillermo/<span class="w"> </span>/media/guillermo/SAMSUNG_256_NVME/MAGGIERAW
 </span></code></pre></div>
-<p>It's easier since I don't need the type the whole command over and over again.</p>
-<p>From the top of my head -ahvp meaning on rsync is, Archive, Human readable and Verbose.
-The external the device that I'm using is a Samsung SSD T7 Shield 1TB with NTFS.
-And I can use it directly on Linux (Fedora/Debian) without any issue. Even Bitlocker is supported.
-The files that have been copied to the external device can be used directly without unpacking anything[0].
-That's a win in my eyes.</p>
-<p>[0] Of course the smallers that I being zipped (using Tar, but you know what I mean) for a better transfer speed in general.</p>
+<p>The reason why I increase verbosity is to exclude files and folders I don't need back-up. I don't need to back-up <code>.cache</code> so that directory is going on the exclude list.</p>
+<p>And also it's easier to keep up which files and directories to exclude instead of typing everything in the terminal emulator.</p>
+<h3 id="rsyncexcludetxt">Rsyncexclude.txt</h3>
+<p>An example what to exclude:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>node_modules
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>.cache
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>.config
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>.local
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>.npm
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>.nvm
+</span></code></pre></div>
+<hr />
+<h2 id="for-windows">For Windows</h2>
+<h3 id="rynscps1-powershell-executable">rynsc.ps1 (Powershell executable)</h3>
+<p>Slightly different for Windows utilizing Cygwin</p>
+<p><em>Cygwin is a collection of open source tools that allows Unix or Linux applications to be compiled and run on a Microsoft Windows operating system (OS) from within a Linux-like interface.</em></p>
+<p>And is required to run Rsync.</p>
+<p>https://www.cygwin.com/install.html</p>
+<p>https://community.chocolatey.org/packages/Cygwin</p>
+<p>You can copy the command or copy the command in a file.</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">rsync</span> <span class="n">-ahvp</span> <span class="p">-</span><span class="n">-exclude-from</span><span class="p">=</span><span class="s2">&quot;/cygdrive/c/Users/guill/rsyncexclude.txt&quot;</span> <span class="s2">&quot;/cygdrive/c/Users/guill/&quot;</span> <span class="s2">&quot;/cygdrive/D/GUILLERMO_LATEST&quot;</span>
+</span></code></pre></div>
+<h3 id="rsyncexcludetxt-windows">Rsyncexclude.txt (Windows)</h3>
+<p>An example what to exclude:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>AppData/Local/Packages
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>AppData/Local/
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>&quot;C:\Users\guill\VirtualBox VMs&quot;
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>.vscode/extensions/*
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>AppData/Roaming/Code/
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>AppData/Roaming/EaseUS/*
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>AppData/Roaming/*
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>AppData/LocalLow/*
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>VirtualBox VMs/
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>.vagrant.d/*
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>.config/
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>.vscode
+</span></code></pre></div>
+<hr />
+<p>[0] <a href="https://serverfault.com/questions/141773/what-is-archive-mode-in-rsync">What is archive mode in Rsync</a></p>
+<p>Simple and stupid, but it works flawlessly, no time to waste.</p>
 <div class="admonition success">
 <p class="admonition-title">Done</p>
 </div>

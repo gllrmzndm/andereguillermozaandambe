@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://guillermozaandam.nl/blog/Video_games.html</loc>
+         <lastmod>2023-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://guillermozaandam.nl/blog/Windows-boot-transition.html</loc>
          <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
@@ -82,11 +87,6 @@
     </url>
     <url>
          <loc>https://guillermozaandam.nl/blog/windows_processes.html</loc>
-         <lastmod>2023-09-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://guillermozaandam.nl/blog/you_can_learn_from_games.html</loc>
          <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>

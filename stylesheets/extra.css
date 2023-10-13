@@ -6,6 +6,8 @@
     height: 100%;
   }
   .spotify {
+    /* border: solid 2px;
+    background-color: #14bb22; */
   }
 
   #listeningspotify {
@@ -67,6 +69,15 @@
 }
 
 
+[data-md-color-scheme="vsc"] {
+  --md-default-bg-color: #fcfcfc;
+  --md-primary-fg-color: #f431a7;
+  --md-primary-fg-color--light: #747474;
+  --md-primary-fg-color--dark: #f431a7;
+  --md-typeset-a-color: #f431a7;
+  --md-accent-fg-color: #5b05a8;
+
+}
 
 [data-md-color-scheme="youtube"] {
   --md-primary-fg-color: #EE0F0F;

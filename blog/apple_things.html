@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://guillermozaandam.nl/blog/using-ntfs-bitlocker.html">
+        <link rel="canonical" href="https://guillermozaandam.nl/blog/apple_things.html">
       
       
-        <link rel="prev" href="under-the-hood-changes.html">
+        <link rel="prev" href="Windows-boot-transition.html">
       
       
-        <link rel="next" href="windows_processes.html">
+        <link rel="next" href="debian_static_ip_address.html">
       
       <link rel="icon" href="../assets/logo_guillermo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
     
     
       
-        <title>Using NTFS Bitlocker external SSD on Fedora - Guillermo Zaandam</title>
+        <title>Apple Things - Guillermo Zaandam</title>
       
     
     
@@ -69,11 +69,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Using NTFS Bitlocker external SSD on Fedora - Guillermo Zaandam" >
+        <meta  property="og:title"  content="Apple Things - Guillermo Zaandam" >
       
         <meta  property="og:description"  content="Personal website." >
       
-        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/using-ntfs-bitlocker.png" >
+        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/apple_things.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -81,23 +81,23 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/using-ntfs-bitlocker.html" >
+        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/apple_things.html" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Using NTFS Bitlocker external SSD on Fedora - Guillermo Zaandam" >
+        <meta  name="twitter:title"  content="Apple Things - Guillermo Zaandam" >
       
         <meta  name="twitter:description"  content="Personal website." >
       
-        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/using-ntfs-bitlocker.png" >
+        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/apple_things.png" >
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Using NTFS Bitlocker external SSD on Fedora - Guillermo Zaandam" >
+        <meta  property="og:title"  content="Apple Things - Guillermo Zaandam" >
       
         <meta  property="og:description"  content="Personal website." >
       
-        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/using-ntfs-bitlocker.png" >
+        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/apple_things.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -105,15 +105,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/using-ntfs-bitlocker.html" >
+        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/apple_things.html" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Using NTFS Bitlocker external SSD on Fedora - Guillermo Zaandam" >
+        <meta  name="twitter:title"  content="Apple Things - Guillermo Zaandam" >
       
         <meta  name="twitter:description"  content="Personal website." >
       
-        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/using-ntfs-bitlocker.png" >
+        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/apple_things.png" >
       
     
     
@@ -139,7 +139,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#intro" class="md-skip">
+        <a href="#updated-18102013" class="md-skip">
           Skip to content
         </a>
       
@@ -171,7 +171,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Using NTFS Bitlocker external SSD on Fedora
+              Apple Things
             
           </span>
         </div>
@@ -365,11 +365,162 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="apple_things.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Apple Things
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="apple_things.html" class="md-nav__link md-nav__link--active">
         Apple Things
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#productivity-things" class="md-nav__link">
+    Productivity things
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-plane" class="md-nav__link">
+    Control Plane
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icloud-quality-of-life" class="md-nav__link">
+    iCloud Quality of Life
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos-quality-of-life-tips" class="md-nav__link">
+    MacOS Quality of Life tips
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos-gatekeeper" class="md-nav__link">
+    MacOS Gatekeeper
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    Credits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-update-to-ventura-if-you-care-about-diskspeed" class="md-nav__link">
+    Dont update to Ventura if you care about diskspeed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-good" class="md-nav__link">
+    The good
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-bad" class="md-nav__link">
+    The bad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#but-whats-going-on-with-ventura" class="md-nav__link">
+    But what's going on with Ventura?
+  </a>
+  
+    <nav class="md-nav" aria-label="But what's going on with Ventura?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-ugly" class="md-nav__link">
+    The Ugly
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-best" class="md-nav__link">
+    The Best
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos-containers" class="md-nav__link">
+    macOS Containers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualbox-apple-support" class="md-nav__link">
+    Virtualbox Apple support
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtualbox Apple support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-macos-test-builds" class="md-nav__link">
+    Installing macOS test builds
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -561,69 +712,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Using NTFS Bitlocker external SSD on Fedora
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="using-ntfs-bitlocker.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="using-ntfs-bitlocker.html" class="md-nav__link">
         Using NTFS Bitlocker external SSD on Fedora
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-yarn" class="md-nav__link">
-    Using yarn
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installing-nvm-and-yarn" class="md-nav__link">
-    Installing nvm and yarn
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-yarn-eg-create-react-app-my-app" class="md-nav__link">
-    Using yarn e.g. create react-app my-app
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -666,6 +759,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -674,30 +769,119 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
+  <a href="#productivity-things" class="md-nav__link">
+    Productivity things
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-yarn" class="md-nav__link">
-    Using yarn
+  <a href="#control-plane" class="md-nav__link">
+    Control Plane
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-nvm-and-yarn" class="md-nav__link">
-    Installing nvm and yarn
+  <a href="#icloud-quality-of-life" class="md-nav__link">
+    iCloud Quality of Life
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-yarn-eg-create-react-app-my-app" class="md-nav__link">
-    Using yarn e.g. create react-app my-app
+  <a href="#macos-quality-of-life-tips" class="md-nav__link">
+    MacOS Quality of Life tips
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos-gatekeeper" class="md-nav__link">
+    MacOS Gatekeeper
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    Credits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-update-to-ventura-if-you-care-about-diskspeed" class="md-nav__link">
+    Dont update to Ventura if you care about diskspeed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-good" class="md-nav__link">
+    The good
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-bad" class="md-nav__link">
+    The bad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#but-whats-going-on-with-ventura" class="md-nav__link">
+    But what's going on with Ventura?
+  </a>
+  
+    <nav class="md-nav" aria-label="But what's going on with Ventura?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-ugly" class="md-nav__link">
+    The Ugly
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-best" class="md-nav__link">
+    The Best
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos-containers" class="md-nav__link">
+    macOS Containers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualbox-apple-support" class="md-nav__link">
+    Virtualbox Apple support
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtualbox Apple support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-macos-test-builds" class="md-nav__link">
+    Installing macOS test builds
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -716,53 +900,98 @@
                   
 
 
-  <h1>Using NTFS Bitlocker external SSD on Fedora</h1>
-
-<p>So I figured out that, <code>yarn</code> may be better than <code>npm</code> when installing packages.</p>
-<h2 id="intro">Intro</h2>
-<p>So I figured out that, <code>yarn</code> may be better than <code>npm</code> when installing packages.
-Reason why I use <code>yarn</code> instead of <code>npm</code> can be found here: <a href="https://engineering.fb.com/2016/10/11/web/yarn-a-new-package-manager-for-javascript/">Yarn: A new package manager for JavaScript</a></p>
-<p>Along side these tools, I use Node Version Manager:</p>
-<p><em>nvm is a version manager for node.js, designed to be installed per-user, and invoked per-shell. nvm works on any POSIX-compliant shell (sh, dash, ksh, zsh, bash), in particular on these platforms: unix, macOS, and windows WSL.</em> ~ https://github.com/nvm-sh/nvm</p>
-<p>The reason why I use NVM:</p>
-<ul>
-<li>Use other version of <code>npm</code>.</li>
-<li>Using <code>yarn</code> without installing it with <em>elevated rights</em></li>
-</ul>
-<h2 id="using-yarn">Using yarn</h2>
-<p>Since I couldn't use <code>yarn</code> on my system without(Fedora) using elevated rights. see error:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">[</span>guillermo@uhuh~<span class="o">]</span>$<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>--global<span class="w"> </span>yarn
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>npm<span class="w"> </span>ERR!<span class="w"> </span>code<span class="w"> </span>EACCES
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>npm<span class="w"> </span>ERR!<span class="w"> </span>syscall<span class="w"> </span>rename
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>npm<span class="w"> </span>ERR!<span class="w"> </span>path<span class="w"> </span>/usr/local/lib/node_modules/yarn
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>npm<span class="w"> </span>ERR!<span class="w"> </span>dest<span class="w"> </span>/usr/local/lib/node_modules/.yarn-Jrexx8nI
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>npm<span class="w"> </span>ERR!<span class="w"> </span>errno<span class="w"> </span>-13
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>npm<span class="w"> </span>ERR!<span class="w"> </span>Error:<span class="w"> </span>EACCES:<span class="w"> </span>permission<span class="w"> </span>denied,<span class="w"> </span>rename<span class="w"> </span><span class="s1">&#39;/usr/local/lib/node_modules/yarn&#39;</span><span class="w"> </span>-&gt;<span class="w"> </span><span class="s1">&#39;/usr/local/lib/node_modules/.yarn-Jrexx8nI&#39;</span>
+<h1 id="updated-18102013">Updated 18/10/2013</h1>
+<h3 id="productivity-things">Productivity things</h3>
+<p><a href="https://www.alfredapp.com/">https://www.alfredapp.com/</a></p>
+<p><em>Launch applications and find files on your Mac or on the web. Alfred learns how you use your Mac and prioritises results.</em></p>
+<p>More than an application launcher.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>My most used Alfred things beyond launching apps/files:
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>* Clipboard history (screenshots on clipboard in the history is extra useful)
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>* Snippets using the date placeholders {datetime:short} for various file naming and email workflows
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>* Snippet shortcuts for things I always forget like the shortcut for → and ™ or my zoom meeting link that I paste into meeting invites
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>* Launching simple shell scripts by keyword
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>* Workflow for opening Jira tickets in my browser quickly
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>* Search notes workflow for quick access to everything in the Notes app
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>* Soulver workflow for using the Soulver engine in Alfred for doing quick calculations
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>I was a Quicksilver user that never quite got into Spotlight. I&#39;m betting these days some of these workflows can be accomplished with Spotlight and other apps but Alfred has worked very nicely for me.
 </span></code></pre></div>
-<p>I had to find a solution for this problem and my resolution was to use <code>nvm</code> which obviously using a good reason to use, even without <code>yarn</code>.
-My source for the solution can be found here: <a href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally">Resolving EACCES permissions errors when installing packages globally</a></p>
-<h2 id="installing-nvm-and-yarn">Installing nvm and yarn</h2>
-<p>So Installed this script: (I don't like using scripts to install binaries, because that's the job of the package manager.)</p>
+<hr />
+<h3 id="control-plane">Control Plane</h3>
+<p><a href="https://github.com/dustinrue/ControlPlane">https://github.com/dustinrue/ControlPlane</a></p>
+<p>ControlPlane, a fork of MarcoPolo, brings context and location sensitive awareness to OS X. With ControlPlane you can intelligently reconfigure your Mac or perform any number of actions based on input from a wide variety of evidence sources including but not limited to available WiFi networks, current location, connected monitors, connected and nearby bluetooth devices, currently running apps and other configurable sources. You will find a full feature list at <a href="http://www.controlplaneapp.com/feature-list">http://www.controlplaneapp.com/feature-list</a>.</p>
+<hr />
+<h3 id="icloud-quality-of-life">iCloud Quality of Life</h3>
+<p>Three small QoL tips for people who have issues with their iCloud sync</p>
 <ol>
-<li>https://github.com/nvm-sh/nvm#install--update-script</li>
-<li>nvm install --lts (for installing the latest nodejs LTS version)</li>
-<li>npm install --global yarn</li>
+<li>
+<p>In Finder, enable the Status bar. This shows the current iCloud progress.</p>
+</li>
+<li>
+<p>If iCloud sync is stuck, run <code>killall bird</code> to restart the iCloud drive sync process.</p>
+</li>
+<li>
+<p>Disable <code>Optimized Mac Storage</code> in the iCloud system preferences. This forces your mac to always upload and download files.</p>
+</li>
 </ol>
-<p>For lazy people copy this:</p>
-<p><code>bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-nvm install --lts
-npm install --global yarn</code></p>
-<p>and use <code>yarn create react-app my-app</code> to use yarn as packagemanger. (Mind the space in <code>yarn create</code> part, it isn't a spelling mistake.)</p>
-<h2 id="using-yarn-eg-create-react-app-my-app">Using yarn e.g. create react-app my-app</h2>
-<p>Accoridng to <a href="https://reactjs.org/docs/create-a-new-react-app.html">Create a New React App</a></p>
-<p>You will need to use the command <code>npx create-react-app my-app</code> which is going to <code>npm</code> instead of <code>yarn</code> to install your packages. Which we don't want.
-The reason why <code>npx</code> defaults to <code>npm</code> is explained on GitHub by <a href="https://github.com/iansu">iansu</a>:</p>
-<p><em>"We've actually made some changes to this since the initial PR. Our goal is to make running create-react-app deterministic. With the old behaviour two people running npx create-react-app my-app could end up with different installs if one of them happened to have Yarn installed.</em></p>
-<p><em>The new behaviour in this PR looks at how create-react-app was invoked and uses the corresponding package manager. npx create-react-app my-app will use npm and yarn dlx create-react-app my-app (or yarn create react-app my-app) will use Yarn. This will also potentially allow us to add support for other package managers by following the same pattern."</em></p>
-<p>Source: <a href="https://github.com/facebook/create-react-app/pull/11322">https://github.com/facebook/create-react-app/pull/11322</a></p>
-<p>To use <code>yarn</code>, you will need to use the command <code>yarn create react-app my-app</code> (Mind the space in <code>yarn create</code> part, it isn't a spelling mistake.)
-Using <code>create-react-app my-app</code> will also use <code>npm</code> as package manager.</p>
+<p>One thing I haven't figured out is how to see iCloud sync status without having to open Finder, e.g. for a custom menu bar item.</p>
+<hr />
+<h3 id="macos-quality-of-life-tips">MacOS Quality of Life tips</h3>
+<ul>
+<li>Add a “folder..noindex” to disable files in the folder from getting indexed</li>
+<li>Using the force touchpad on your Macbook to watch a preview of the website. (Click on the url)</li>
+<li>Hard to discover tips and apps for making macOS pleasant by Tristan Hume <a href="https://thume.ca/2020/09/04/macos-tips/">https://thume.ca/2020/09/04/macos-tips/</a></li>
+<li>Mouse keys -- as an anti-feature. (press option 5 times)</li>
+<li>Show hidden files (dotfiles) inside any finder window or file open dialog: Cmd + Shift + .</li>
+</ul>
+<h3 id="macos-gatekeeper">MacOS Gatekeeper</h3>
+<p>Gatekeeper and runtime protection in macOS</p>
+<p>macOS offers the Gatekeeper technology and runtime protection to help ensure that only trusted software runs on a user’s Mac.</p>
+<p>By default, Gatekeeper helps ensure that all downloaded software has been signed by the App Store or signed by a registered developer and notarised by Apple. Both the App Store review process and the notarisation pipeline are designed to ensure that apps contain no known malware. Therefore, by default <em>all software in macOS is checked for known malicious content the first time it’s opened, regardless of how it arrived on the Mac</em>.</p>
+<p>System files, resources and the kernel are shielded from a user’s app space. All apps from the App Store are sandboxed to restrict access to data stored by other apps. If an app from the App Store needs to access data from another app, it can do so only by using the APIs and services provided by macOS.</p>
+<p><a href="https://support.apple.com/en-gb/guide/security/sec5599b66df/web">https://support.apple.com/en-gb/guide/security/sec5599b66df/web</a></p>
+<p><a href="https://help.apple.com/pdf/security/en_GB/apple-platform-security-guide-b.pdf">https://help.apple.com/pdf/security/en_GB/apple-platform-security-guide-b.pdf</a></p>
+<h3 id="credits">Credits</h3>
+<p>"Hard to discover tips and apps for making macOS pleasant" by Tristan Hume.
+<a href="https://thume.ca/">https://thume.ca/</a></p>
+<hr />
+<h3 id="dont-update-to-ventura-if-you-care-about-diskspeed">Dont update to Ventura if you care about diskspeed</h3>
+<h3 id="the-good">The good</h3>
+<p>Why use exFAT in the first place? The most cited reason is that you have, or might someday have, a customer that's on Windows while you're on Mac, or vice versa.</p>
+<p>True, it's the only filesystem that works on both Windows and macOS. Cross-platform compatibility is a really great feature - when done properly.</p>
+<p>The downsides, however, are greater. Ejecting an exFAT drive without properly un-mounting it first can and will kill the partition table. 100% data loss guaranteed.</p>
+<p>And there's more:</p>
+<h3 id="the-bad">The bad</h3>
+<p>ExFAT is a lot slower than other file systems. Even with all of Hedge's new speed gains in place, there's still some overhead left. That's a lot of time lost for the sake of a potential Windows customer.</p>
+<h2 id="but-whats-going-on-with-ventura">But what's going on with Ventura?</h2>
+<h3 id="the-ugly">The Ugly</h3>
+<p>ExFAT has a major speed regression in macOS Ventura; Hedge performs about 40% less than on previous macOS releases, and it's worse for the other apps in the space - up to 60% speed loss. This is unfortunately something only Apple can fix, and we're in talks with them to find a solution.</p>
+<p>If you need to use exFAT, don't update to Ventura.</p>
+<h3 id="the-best">The Best</h3>
+<p>The solution to all of this is simple: for your destinations, stay away from exFAT. It's best to use AFPS instead, and give your customers a <em><a href="https://www.paragon-software.com/home/apfs-windows/?ref=blog.hedge.video">Paragon for APFS</a></em>  license to use on Windows. Best way to spend $49, we'd say. It'll save you countless hours.</p>
+<p>If your camera or recorder gives you the option to use a different file system besides exFAT, it's likely HFS+; Apple's old file system. That's perfectly fine too - Paragon has a driver for that as well. If it's NTFS, you're in the opposite situation, as it natively works on Windows but requires a Paragon driver on macOS.</p>
+<p><a href="https://blog.hedge.video/speed-2dot0/amp/">https://blog.hedge.video/speed-2dot0/amp/</a></p>
+<hr />
+<h2 id="macos-containers">macOS Containers</h2>
+<p>Containers have fundamentally changed the way that modern software is developed and deployed. Containers are supported by a wide range of operating systems including FreeBSD, Solaris, Linux and even Windows, but are not natively supported by macOS. <strong>Until now.</strong></p>
+<p>We’re announcing initial 0.0.1 release of macOS native containers. Yes, you can now <strong>run macOS inside macOS</strong>, build images using Docker and distribute them using registries.</p>
+<p>Installation is available via <a href="https://github.com/macOScontainers/homebrew-formula#installation">Homebrew</a>.</p>
+<p><a href="https://macoscontainers.org/">https://macoscontainers.org/</a></p>
+<hr />
+<h2 id="virtualbox-apple-support">Virtualbox Apple support</h2>
+<h3 id="installing-macos-test-builds">Installing macOS test builds</h3>
+<p>*The test builds are not going through Apple's notarization (would be too much effort to do this for every test build we upload). This means if you're using macOS 10.14.5 or later the kernel extensions will not load if you're using the default security settings. If you really want to use such a test build, you need to disable <a href="https://developer.apple.com/library/archive/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html">​System Integrity Protection</a> (as long as you're running test builds, we're strongly encouraging you to re-enable SIP once you're back to using an official release of VirtualBox).</p>
+<p><em>The test builds for macOS/ARM64 work in principle on Macs with M1 or M2 CPU. However, they are developer previews with known issues (including serious performance ones) with all recent guest operating systems.</em></p>
+<p>Flaky support</p>
+<p><a href="https://www.virtualbox.org/wiki/Testbuilds">https://www.virtualbox.org/wiki/Testbuilds</a></p>
+<hr />
 
 
   

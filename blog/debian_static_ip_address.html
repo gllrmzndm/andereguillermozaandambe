@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://guillermozaandam.nl/blog/debian_static_ip_address.html">
       
       
-        <link rel="prev" href="Windows-boot-transition.html">
+        <link rel="prev" href="apple_things.html">
       
       
         <link rel="next" href="iPhone%20and%20iPad%20logical%20resolution%20table.html">
@@ -355,6 +355,20 @@
     <li class="md-nav__item">
       <a href="Windows-boot-transition.html" class="md-nav__link">
         Windows Boot Transition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="apple_things.html" class="md-nav__link">
+        Apple Things
       </a>
     </li>
   
@@ -709,7 +723,7 @@
 <p>After every restart or shutdown of my host, my guest IP address would change.
 Many times people (Including me) blame Hyper-V or Virtualbox but that isn't the case, but KVM/QEMU doesn't really have this problem as the seem to utlise sticky ip addresses.</p>
 <p>The irony is that I wanted have a fool proof configuration of any setting(s) regardless which OS I'm running to avoid this exact mistake.</p>
-<p>To make it short, there isn't really a <code>visudo</code> for this. (0)</p>
+<p>To make it short, there isn't really a <code>visudo</code> for this. [0]</p>
 <hr />
 <h2 id="scope-of-the-problem">Scope of the problem</h2>
 <p>Any one that is using a plain setup like:</p>
@@ -721,7 +735,7 @@ Many times people (Including me) blame Hyper-V or Virtualbox but that isn't the 
 <p>For the developer or anyone else that want the minimal setup or learn anything.</p>
 <hr />
 <h2 id="setting-a-static-ip-address-manually">Setting a static ip address manually</h2>
-<p>According to Debian: https://wiki.debian.org/NetworkConfiguration
+<p>According to Debian: <a href="https://wiki.debian.org/NetworkConfiguration">https://wiki.debian.org/NetworkConfiguration</a>
 To configure the interface manually, the following needs to be done:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/etc/network/interfaces
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
@@ -738,9 +752,7 @@ To configure the interface manually, the following needs to be done:</p>
 </span></code></pre></div>
 <p>And that's basically that's it, a basic mistake, a mistake that shouldn't be made and validated by anything to avoid this.</p>
 <hr />
-<ol>
-<li>The <code>visudo</code> command opens a text editor like normal, but it validates the syntax of the file upon saving. This prevents configuration errors from blocking <code>sudo</code> operations, which may be your only way of obtaining <strong>root</strong> privileges.</li>
-</ol>
+<p>[0] The <code>visudo</code> command opens a text editor like normal, but it validates the syntax of the file upon saving. This prevents configuration errors from blocking <code>sudo</code> operations, which may be your only way of obtaining <strong>root</strong> privileges.</p>
 <div class="admonition success">
 <p class="admonition-title">Done</p>
 </div>

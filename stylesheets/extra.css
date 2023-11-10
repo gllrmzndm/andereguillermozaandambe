@@ -21,7 +21,7 @@
     }
   
     .hero_image {
-      animation: grayscaleColorToggle 20s;
+      animation: grayscaleColorToggle 15s;
     }
 
   .hero_image {
@@ -83,20 +83,20 @@
 
   @keyframes grayscaleColorToggle {
       0% {
-        filter: grayscale(0%);
-      }
-  
-      50% {
-        filter: grayscale(100%);
-      }
-  
-      100% {
-        filter: grayscale(0%);
-      }
+          filter: grayscale(100%);
+        }
+      
+        50% {
+          filter: grayscale(50%);
+        }
+      
+        100% {
+          filter: grayscale(0%);
+        }
     }
     
     .hero_image {
-      animation: grayscaleColorToggle 25s infinite;
+      animation: grayscaleColorToggle 15s;
     }
 
   .hero_image {

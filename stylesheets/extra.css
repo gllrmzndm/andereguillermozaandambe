@@ -74,6 +74,14 @@
     /* font-size: medium;
     text-align: left; */
   }
+
+  #linktree {
+
+    display: block;
+    width: 100%;
+    border: solid;
+    text-align: center;
+  }
 }
 
 
@@ -136,6 +144,14 @@
     .spotify:hover {
       filter: grayscale(1);
     }
+
+            #linktree {
+      
+              display: block;
+              width: 100%;
+              border: solid;
+              text-align: center;
+            }
   
 }
 

@@ -1,0 +1,983 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal website.">
+      
+      
+      
+        <link rel="canonical" href="https://guillermozaandam.nl/blog/Linux_on_ThinkPad_E585_and_E485.html">
+      
+      
+        <link rel="prev" href="../index.html">
+      
+      
+        <link rel="next" href="Rsync.html">
+      
+      <link rel="icon" href="../assets/darkhose_white.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
+    
+    
+      
+        <title>Installing Linux on ThinkPad E585 and E485. - Guillermo Zaandam</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.113286f1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-834L9K27Q8"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-834L9K27Q8",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-834L9K27Q8",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Installing Linux on ThinkPad E585 and E485. - Guillermo Zaandam" >
+      
+        <meta  property="og:description"  content="Personal website." >
+      
+        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/Linux_on_ThinkPad_E585_and_E485.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/Linux_on_ThinkPad_E585_and_E485.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Installing Linux on ThinkPad E585 and E485. - Guillermo Zaandam" >
+      
+        <meta  name="twitter:description"  content="Personal website." >
+      
+        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/Linux_on_ThinkPad_E585_and_E485.png" >
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Installing Linux on ThinkPad E585 and E485. - Guillermo Zaandam" >
+      
+        <meta  property="og:description"  content="Personal website." >
+      
+        <meta  property="og:image"  content="https://guillermozaandam.nl/assets/images/social/blog/Linux_on_ThinkPad_E585_and_E485.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://guillermozaandam.nl/blog/Linux_on_ThinkPad_E585_and_E485.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Installing Linux on ThinkPad E585 and E485. - Guillermo Zaandam" >
+      
+        <meta  name="twitter:description"  content="Personal website." >
+      
+        <meta  name="twitter:image"  content="https://guillermozaandam.nl/assets/images/social/blog/Linux_on_ThinkPad_E585_and_E485.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="nfs-pink" data-md-color-primary="pink" data-md-color-accent="deep-orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installing-linux-on-thinkpad-e585-and-e485" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+  <!-- Add announcement here, including arbitrary HTML -->
+  <p>Credits for illustrations: <a href="https://www.behance.net/ash-miller5041/">Ash Miller</a></p>
+  
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Guillermo Zaandam" class="md-header__button md-logo" aria-label="Guillermo Zaandam" data-md-component="logo">
+      
+  <img src="../assets/darkhorse_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guillermo Zaandam
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installing Linux on ThinkPad E585 and E485.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="nfs-pink" data-md-color-primary="pink" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+
+
+  <div class="hero_image">
+      <img src="../assets/images/illustrations/nfsheatbanner.jpg" alt="nfs-banner" width="100%" height="100%" draggable="false">
+  </div>
+
+
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Guillermo Zaandam" class="md-nav__button md-logo" aria-label="Guillermo Zaandam" data-md-component="logo">
+      
+  <img src="../assets/darkhorse_white.png" alt="logo">
+
+    </a>
+    Guillermo Zaandam
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Blog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="Linux_on_ThinkPad_E585_and_E485.html" class="md-nav__link md-nav__link--active">
+        Installing Linux on ThinkPad E585 and E485.
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Rsync.html" class="md-nav__link">
+        Making back-ups as simple as possible (Rsync)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Video_games.html" class="md-nav__link">
+        Video games
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Windows-boot-transition.html" class="md-nav__link">
+        Windows Boot Transition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="apple_things.html" class="md-nav__link">
+        Apple Things
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="debian_static_ip_address.html" class="md-nav__link">
+        Debian static ip address
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iPhone%20and%20iPad%20logical%20resolution%20table.html" class="md-nav__link">
+        iPhone and iPad logical resolution table
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ins_and_outs_windows_upgrade.html" class="md-nav__link">
+        The ins and outs of what happens in an upgrade to Windows 10
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lenovo_tools.html" class="md-nav__link">
+        Lenovo Tools for admins
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="managing_6000_bookmarks.html" class="md-nav__link">
+        Managing almost six-thousand 6000 bookmarks.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="miscellaneous_web_development.html" class="md-nav__link">
+        Miscellaneous web development tricks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my_windows_backup_solution.html" class="md-nav__link">
+        My Windows Back-up solution
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="passwordless_ssh_windows_linux.html" class="md-nav__link">
+        How to establish a passwordless SSH Connection between Windows and Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="save-changes-after-reload.html" class="md-nav__link">
+        Save CSS changes after page reload (Chrome)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="starting-my-blog.html" class="md-nav__link">
+        Starting my blog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tailwindautofomat.html" class="md-nav__link">
+        Tailwind auto format with Prettier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="transferring.html" class="md-nav__link">
+        Transferring files from my Linux VM to my localhost
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="under-the-hood-changes.html" class="md-nav__link">
+        Under the hood changes (old website)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="using-ntfs-bitlocker.html" class="md-nav__link">
+        Using NTFS Bitlocker external SSD on Fedora
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="windows_processes.html" class="md-nav__link">
+        Windows processes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="installing-linux-on-thinkpad-e585-and-e485">Installing Linux on ThinkPad E585 and E485.</h1>
+<p>Descriptive guide for Installing Linux on your Lenovo Thinkpad E585 and E485.
+This guide is intended to help people installing Linux on their Ryzen-laptops and all credits goes the persons making this happen.</p>
+<p><img alt="Thinkpad E585" src="https://www.tdblog.be/wp-content/uploads/2018/08/27082018-lenovo-blog.png" /></p>
+<h1 id="note">Note</h1>
+<p>The new BIOS version 1.54 of the Lenovo Thinkpad E585 and Thinkpad E485 made this workaround obsolete and is fixed by Lenovo.
+Get your latest BIOS update over here: https://support.lenovo.com/nl/en/downloads/ds503790</p>
+<h2 id="changes">Changes</h2>
+<p>CHANGES IN THIS RELEASE
+ Version 1.54</p>
+<p>[Important updates]
+  Nothing.</p>
+<p>[New functions or enhancements]
+  Nothing.</p>
+<p>[Problem fixes]
+- Sync IOAPICID in IVRS and APIC ACPI tables (Linux). <br />
+- Enhance to address vulnerability security issue.</p>
+<h3 id="source">Source</h3>
+<p>https://download.lenovo.com/pccbbs/mobiles/r0uuj74w.txt</p>
+<p><strong>Thanks to:</strong>
+https://forum.level1techs.com/t/lenovo-thinkpad-e585-ryzen-2500u-vega-8-review-impressions-linux-etc/130307</p>
+<p>https://evilazrael.de/comment/914</p>
+<p>https://thinkpad-forum.de/threads/217551-Boot-Parameter-f%FCr-E585-bzw-f%FCr-AMD-Ryzen-allgemein-besonders-ab-Kernel-4-20-x?p=2176002#post2176002</p>
+<p>https://unix.stackexchange.com/questions/469153/what-are-the-implication-of-iommu-soft</p>
+<p>https://medium.com/@jthegedus/ubuntu-18-04-lts-on-lenovo-thinkpad-e485-15e1d601473f</p>
+<hr />
+<h1 id="installing-ubuntu-1804x-lts-bionic-beaver-on-the-lenovo-thinkpad-e585">Installing Ubuntu 18.04.x LTS (Bionic Beaver) on the Lenovo ThinkPad E585</h1>
+<h2 id="make-sure-to-update-your-firmware-of-your-laptop">Make sure to update your FIRMWARE of your laptop.</h2>
+<p><a href="https://pcsupport.lenovo.com/nl/en/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e585-type-20kv/downloads">Lenovo E585 support website</a></p>
+<p>Firmware updates can be done with an USB flash drive.</p>
+<h2 id="get-ubuntu-1804x-lts">Get Ubuntu 18.04.x LTS.</h2>
+<p><a href="http://releases.ubuntu.com/18.04/">Ubuntu 18.04.2 LTS (Bionic Beaver)</a></p>
+<h2 id="use-etcher-or-rufus-to-make-a-bootable-iso">Use Etcher or Rufus to make a bootable iso.</h2>
+<p><a href="https://www.balena.io/etcher/">BalenaEtcher</a> For Linux, MacOS and Windows.</p>
+<p><a href="https://rufus.ie/">Rufus</a> For Windows only.</p>
+<h2 id="installing-ubuntu">Installing Ubuntu</h2>
+<ol>
+<li>After inserting USB flash drive and turning on your laptop make sure to <strong>press F12</strong> during boot and select your USB flash drive or Ubuntu installation. </li>
+<li><strong>make sure to hold or press SHIFT a couple of times to enter the GRUB menu.</strong></li>
+<li>Highlight "<strong>Installing Ubuntu</strong>"</li>
+<li>Press the "<strong>e</strong>" key on your keyboard to edit.</li>
+<li>add without quotes "<strong>ivrs_ioapic[32]=00:14.0 ivrs_ioapic[33]=00:00.1 clocksource=hpet libata.force=1:nohrst iommu=pt</strong>" to the list.</li>
+<li>
+<p>setparams 'Try Ubuntu without Installing'</p>
+<div class="language-text highlight"><pre><span></span><code>    set gfxpayload-keep
+    linux         /casper/vmlinuz file/cdrom/preseed/ubuntu.seed boot=casper quiet splash -- ivrs_ioapic[32]=00:14.0 ivrs_ioapic[33]=00:00.1 clocksource=hpet libata.force=1:nohrst iommu=pt
+    initrd        /casper/initrd
+</code></pre></div>
+</li>
+<li>
+<p><strong>Press F10</strong> to start the installation of Ubuntu.</p>
+</li>
+</ol>
+<h2 id="configuring-grub">Configuring GRUB</h2>
+<p>Open your terminal with the keys <strong>CTRL + ALT + T</strong> and do the following:</p>
+<div class="language-text highlight"><pre><span></span><code>sudo nano /etc/default/grub
+</code></pre></div>
+<ol>
+<li><strong>Add</strong> GRUB_CMDLINE_LINUX="<strong>ivrs_ioapic[32]=00:14.0 ivrs_ioapic[33]=00:00.1 clocksource=hpet libata.force=1:nohrst iommu=pt</strong>"</li>
+<li>It should look like this</li>
+<li>
+<p>$ sudo cat /usr/share/grub/default/grub</p>
+<h1 id="if-you-change-this-file-run-update-grub-afterwards-to-update">If you change this file, run    'update-grub' afterwards to update</h1>
+<h1 id="bootgrubgrubcfg">/boot/grub/grub.cfg.</h1>
+<h1 id="for-full-documentation-of-the-options-in-this-file-see">For full documentation of the     options in this file, see:</h1>
+<h1 id="info-f-grub-n-simple-configuration">info -f grub -n 'Simple     configuration'</h1>
+<p>GRUB_DEFAULT=0
+GRUB_HIDDEN_TIMEOUT=0
+GRUB_HIDDEN_TIMEOUT_QUIET=true
+GRUB_TIMEOUT=10
+GRUB_DISTRIBUTOR=<code>lsb_release -i -s 2&gt;    /dev/null || echo Debian</code>
+GRUB_CMDLINE_LINUX_DEFAULT="quiet     splash"
+GRUB_CMDLINE_LINUX="ivrs_ioapic[32]=00:14.0 ivrs_ioapic[33]=00:00.1 clocksource=hpet libata.force=1:nohrst iommu=pt"</p>
+<h1 id="uncomment-to-enable-badram-filtering-modify-to-suit-your-needs">Uncomment to enable BadRAM filtering,    modify to suit your needs</h1>
+<h1 id="this-works-with-linux-no-patch-required-and-with-any-kernel-that-obtains">This works with Linux (no patch     required) and with any kernel that    obtains</h1>
+<h1 id="the-memory-map-information-from-grub-gnu-mach-kernel-of-freebsd">the memory map information from GRUB    (GNU Mach, kernel of FreeBSD ...)</h1>
+<h1 id="grub_badram0x012345670xfefefefe-0x89abcdef0xefefefef">GRUB_BADRAM="0x01234567,0xfefefefe,    0x89abcdef,0xefefefef"</h1>
+</li>
+<li>
+<p>Press <strong>CTRL + O</strong> to save and <strong>CTRL + X</strong> to exit.</p>
+</li>
+<li><strong>Update</strong> GRUB with:<div class="language-text highlight"><pre><span></span><code>sudo update-grub
+</code></pre></div>
+</li>
+</ol>
+<h2 id="done">Done</h2>
+<h2 id="explanation-about-ivrs_ioapic3200140-ivrs_ioapic3300001-clocksourcehpet-libataforce1nohrst-iommupt">Explanation about 'ivrs_ioapic[32]=00:14.0 ivrs_ioapic[33]=00:00.1 clocksource=hpet libata.force=1:nohrst iommu=pt'.</h2>
+<p><strong>Quote from eazrael on https://evilazrael.de/comment/914</strong></p>
+<p><em>Ok, this is really a firmware bug, the ACPI IVRS table lacks at least one entry. Adding ivrs_ioapic[32]=00:14.0 instead of intremap=off is sufficient to make the system boot until Lenovo releases an UEFI update with a working IVRS table. At least UEFI 1.27 (2018-07-24) needs this override. And spec_store_bypass_disable=prctl is still needed for Ubuntu &amp; co.</em></p>
+<p><em>The clue is the line "[Firmware Bug]: AMD-Vi: IOAPIC[32] not in IVRS table". I decompiled the ACPI tables, started to read the AMD documentation, but in the end I just guessed the 32 from the error message and 00:14.0 from the lspci output and the Stack Overflow/Ubuntu forum entries.  Interesting stuff, but too much to read in my little time.</em> </p>
+<p><em>What was helpful is the Linux boot parameter amd_iommu_dump=1 which will dump information from the IVRS table:</em></p>
+<div class="language-text highlight"><pre><span></span><code>[    0.851042] AMD-Vi: Using IVHD type 0x11
+[    0.851401] AMD-Vi: device: 00:00.2 cap: 0040 seg: 0 flags: b0 info 0000
+[    0.851401] AMD-Vi:        mmio-addr: 00000000feb80000
+[    0.851430] AMD-Vi:   DEV_SELECT_RANGE_START  devid: 00:01.0 flags: 00
+[    0.851431] AMD-Vi:   DEV_RANGE_END           devid: ff:1f.6
+[    0.851870] AMD-Vi:   DEV_ALIAS_RANGE                 devid: ff:00.0 flags: 00   devid_to: 00:14.4
+[    0.851871] AMD-Vi:   DEV_RANGE_END           devid: ff:1f.7
+[    0.851875] AMD-Vi:   DEV_SPECIAL(HPET[0])           devid: 00:14.0
+[    0.851876] AMD-Vi:   DEV_SPECIAL(IOAPIC[33])                devid: 00:14.0
+[    0.851877] AMD-Vi:   DEV_SPECIAL(IOAPIC[34])                devid: 00:00.1
+[    1.171028] AMD-Vi: IOMMU performance counters supported
+</code></pre></div>
+<p><em>Resolving devid 00:14.0 was easy via lspci:</em></p>
+<p><em>00:14.0 SMBus: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller (rev 61)
+but for 00:00.1 I have not found the device. If anybody knows how to list all device ids and their associate devices/drivers/etc, please mail me.</em></p>
+<p><em>Sources/References:</em></p>
+<div class="language-text highlight"><pre><span></span><code>https://ubuntuforums.org/showthread.php?t=2254677
+https://superuser.com/questions/1052023/ioapic0-not-in-ivrs-table
+https://lwn.net/Articles/664999/
+https://01.org/linux-acpi/utilities
+https://support.amd.com/TechDocs/48882_IOMMU.pdf
+</code></pre></div>
+<hr />
+<p><strong>Quote from Penguin tamer https://translate.google.com/translate?hl=en&amp;sl=de&amp;tl=en&amp;u=https%3A%2F%2Fthinkpad-forum.de%2Fthreads%2F217551-Boot-Parameter-f%25FCr-E585-bzw-f%25FCr-AMD-Ryzen-allgemein-besonders-ab-Kernel-4-20-x%3Fp%3D2176002%23post2176002</strong></p>
+<p><em><strong>ivrs_ioapic</strong>: correction IOMMU Adresses in BIOS.</em></p>
+<p><em><strong>libata.force</strong>: No hardware reset on the SATA controller. So that the computer wakes up after suspend to ram.</em></p>
+<p><em><strong>iommu=pt</strong>: pass through for iommu, without this option, X does not seem to work Kernel 4.20.0.</em></p>
+<p><strong>Sources:</strong> </p>
+<p>https://forum.level1techs.com/t/lenovo-thinkpad-e585-ryzen-2500u-vega-8-review-impressions-linux-etc/130307</p>
+<p>https://evilazrael.de/comment/914</p>
+<p>https://thinkpad-forum.de/threads/217551-Boot-Parameter-f%FCr-E585-bzw-f%FCr-AMD-Ryzen-allgemein-besonders-ab-Kernel-4-20-x?p=2176002#post2176002</p>
+<h2 id="all-the-credits-goes-the-persons-for-making-this-happen-cited-in-the-source-thank-you">All the credits goes the persons for making this happen cited in the source. Thank you.</h2>
+<hr />
+<h1 id="installing-ubuntu-1804x-lts-bionic-beaver-on-the-lenovo-thinkpad-e485">Installing Ubuntu 18.04.x LTS (Bionic Beaver) on the Lenovo ThinkPad E485</h1>
+<h2 id="make-sure-to-update-your-firmware-of-your-laptop_1">Make sure to update your FIRMWARE of your laptop.</h2>
+<p><a href="https://pcsupport.lenovo.com/nl/en/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e485-type-20ku/downloads">Lenovo E485 support website</a></p>
+<p>Firmware updates can be done with an USB flash drive.</p>
+<h2 id="get-ubuntu-1804x-lts_1">Get Ubuntu 18.04.x LTS.</h2>
+<p><a href="http://releases.ubuntu.com/18.04/">Ubuntu 18.04.2 LTS (Bionic Beaver)</a></p>
+<h2 id="use-etcher-or-rufus-to-make-a-bootable-iso_1">Use Etcher or Rufus to make a bootable iso.</h2>
+<p><a href="https://www.balena.io/etcher/">BalenaEtcher</a> For Linux, MacOS and Windows.</p>
+<p><a href="https://rufus.ie/">Rufus</a> For Windows only.</p>
+<h2 id="installing-ubuntu_1">Installing Ubuntu</h2>
+<ol>
+<li>After inserting USB flash drive and turning on your laptop make sure to <strong>press F12</strong> during boot and select your USB flash drive or Ubuntu installation. </li>
+<li><strong>make sure to hold or press SHIFT a couple of times to enter the GRUB menu.</strong></li>
+<li>Highlight "<strong>Installing Ubuntu</strong>"</li>
+<li>Press the "<strong>e</strong>" key on your keyboard to edit.</li>
+<li>add without quotes "<strong>ivrs_ioapic[32]=00:14.0 and spec_store_bypass_disable=prctl</strong>" to the list.</li>
+<li>
+<p>setparams 'Try Ubuntu without Installing'</p>
+<div class="language-text highlight"><pre><span></span><code>    set gfxpayload-keep
+    linux         /casper/vmlinuz file/cdrom/preseed/ubuntu.seed boot=casper quiet splash -- ivrs_ioapic[32]=00:14.0 and spec_store_bypass_disable=prctl
+    initrd        /casper/initrd
+</code></pre></div>
+</li>
+<li>
+<p><strong>Press F10</strong> to start the installation of Ubuntu.</p>
+</li>
+</ol>
+<h2 id="configuring-grub_1">Configuring GRUB</h2>
+<p>Open your terminal with the keys <strong>CTRL + ALT + T</strong> and do the following:</p>
+<div class="language-text highlight"><pre><span></span><code>sudo nano /etc/default/grub
+</code></pre></div>
+<ol>
+<li><strong>Add</strong> GRUB_CMDLINE_LINUX="<strong>ivrs_ioapic[32]=00:14.0 and spec_store_bypass_disable=prctl</strong>"</li>
+<li>It should look like this</li>
+<li>
+<p>$ sudo cat /usr/share/grub/default/grub</p>
+<h1 id="if-you-change-this-file-run-update-grub-afterwards-to-update_1">If you change this file, run    'update-grub' afterwards to update</h1>
+<h1 id="bootgrubgrubcfg_1">/boot/grub/grub.cfg.</h1>
+<h1 id="for-full-documentation-of-the-options-in-this-file-see_1">For full documentation of the     options in this file, see:</h1>
+<h1 id="info-f-grub-n-simple-configuration_1">info -f grub -n 'Simple     configuration'</h1>
+<p>GRUB_DEFAULT=0
+GRUB_HIDDEN_TIMEOUT=0
+GRUB_HIDDEN_TIMEOUT_QUIET=true
+GRUB_TIMEOUT=10
+GRUB_DISTRIBUTOR=<code>lsb_release -i -s 2&gt;    /dev/null || echo Debian</code>
+GRUB_CMDLINE_LINUX_DEFAULT="quiet     splash"
+GRUB_CMDLINE_LINUX="ivrs_ioapic[32]=00:14.0 and spec_store_bypass_disable=prctl"</p>
+<h1 id="uncomment-to-enable-badram-filtering-modify-to-suit-your-needs_1">Uncomment to enable BadRAM filtering,    modify to suit your needs</h1>
+<h1 id="this-works-with-linux-no-patch-required-and-with-any-kernel-that-obtains_1">This works with Linux (no patch     required) and with any kernel that    obtains</h1>
+<h1 id="the-memory-map-information-from-grub-gnu-mach-kernel-of-freebsd_1">the memory map information from GRUB    (GNU Mach, kernel of FreeBSD ...)</h1>
+<h1 id="grub_badram0x012345670xfefefefe-0x89abcdef0xefefefef_1">GRUB_BADRAM="0x01234567,0xfefefefe,    0x89abcdef,0xefefefef"</h1>
+</li>
+<li>
+<p>Press <strong>CTRL + O</strong> to save and <strong>CTRL + X</strong> to exit.</p>
+</li>
+<li><strong>Update</strong> GRUB with:<div class="language-text highlight"><pre><span></span><code>sudo update-grub
+</code></pre></div>
+</li>
+</ol>
+<h2 id="done_1">Done</h2>
+<h2 id="explanation-about-ivrs_ioapic3200140">Explanation about 'ivrs_ioapic[32]=00:14.0'.</h2>
+<p><strong>Quote from eazrael on https://evilazrael.de/comment/914</strong></p>
+<p><em>Ok, this is really a firmware bug, the ACPI IVRS table lacks at least one entry. Adding ivrs_ioapic[32]=00:14.0 instead of intremap=off is sufficient to make the system boot until Lenovo releases an UEFI update with a working IVRS table. At least UEFI 1.27 (2018-07-24) needs this override. And spec_store_bypass_disable=prctl is still needed for Ubuntu &amp; co.</em></p>
+<p><em>The clue is the line "[Firmware Bug]: AMD-Vi: IOAPIC[32] not in IVRS table". I decompiled the ACPI tables, started to read the AMD documentation, but in the end I just guessed the 32 from the error message and 00:14.0 from the lspci output and the Stack Overflow/Ubuntu forum entries.  Interesting stuff, but too much to read in my little time.</em> </p>
+<p><em>What was helpful is the Linux boot parameter amd_iommu_dump=1 which will dump information from the IVRS table:</em></p>
+<div class="language-text highlight"><pre><span></span><code>[    0.851042] AMD-Vi: Using IVHD type 0x11
+[    0.851401] AMD-Vi: device: 00:00.2 cap: 0040 seg: 0 flags: b0 info 0000
+[    0.851401] AMD-Vi:        mmio-addr: 00000000feb80000
+[    0.851430] AMD-Vi:   DEV_SELECT_RANGE_START  devid: 00:01.0 flags: 00
+[    0.851431] AMD-Vi:   DEV_RANGE_END           devid: ff:1f.6
+[    0.851870] AMD-Vi:   DEV_ALIAS_RANGE                 devid: ff:00.0 flags: 00   devid_to: 00:14.4
+[    0.851871] AMD-Vi:   DEV_RANGE_END           devid: ff:1f.7
+[    0.851875] AMD-Vi:   DEV_SPECIAL(HPET[0])           devid: 00:14.0
+[    0.851876] AMD-Vi:   DEV_SPECIAL(IOAPIC[33])                devid: 00:14.0
+[    0.851877] AMD-Vi:   DEV_SPECIAL(IOAPIC[34])                devid: 00:00.1
+[    1.171028] AMD-Vi: IOMMU performance counters supported
+</code></pre></div>
+<p><em>Resolving devid 00:14.0 was easy via lspci:</em></p>
+<p><em>00:14.0 SMBus: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller (rev 61)
+but for 00:00.1 I have not found the device. If anybody knows how to list all device ids and their associate devices/drivers/etc, please mail me.</em></p>
+<p><em>Sources/References:</em></p>
+<div class="language-text highlight"><pre><span></span><code>https://ubuntuforums.org/showthread.php?t=2254677
+https://superuser.com/questions/1052023/ioapic0-not-in-ivrs-table
+https://lwn.net/Articles/664999/
+https://01.org/linux-acpi/utilities
+https://support.amd.com/TechDocs/48882_IOMMU.pdf
+</code></pre></div>
+<hr />
+<p>Thanks to James Hegedus from https://medium.com/@jthegedus/ubuntu-18-04-lts-on-lenovo-thinkpad-e485-15e1d601473f</p>
+<h2 id="all-the-credits-goes-the-persons-for-making-this-happen-cited-in-the-source-thank-you_1">All the credits goes the persons for making this happen cited in the source. Thank you.</h2>
+<hr />
+<h1 id="installing-manjaro-on-the-lenovo-thinkpad-e585">Installing Manjaro on the Lenovo ThinkPad E585</h1>
+<h2 id="make-sure-to-update-your-firmware-of-your-laptop_2">Make sure to update your FIRMWARE of your laptop.</h2>
+<p><a href="https://pcsupport.lenovo.com/nl/en/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e585-type-20kv/downloads">Lenovo E585 support website</a></p>
+<p>Firmware updates can be done with an USB flash drive.</p>
+<h2 id="get-the-manjaro-iso">Get the Manjaro ISO.</h2>
+<p><a href="https://manjaro.org/download/"> Manjaro</a></p>
+<h2 id="use-etcher-or-rufus-to-make-a-bootable-iso_2">Use Etcher or Rufus to make a bootable iso.</h2>
+<p><a href="https://www.balena.io/etcher/">BalenaEtcher</a> For Linux, MacOS and Windows.</p>
+<p><a href="https://rufus.ie/">Rufus</a> For Windows only.</p>
+<h2 id="installing-manjaro">Installing Manjaro</h2>
+<ol>
+<li>After inserting USB flash drive and turning on your laptop make sure to <strong>press F12</strong> during boot and select your USB flash drive or Ubuntu installation. </li>
+<li><strong>make sure to hold or press SHIFT a couple of times to enter the GRUB menu.</strong></li>
+<li>Highlight "<strong>Installing Boot: Manjaro.x86_64</strong>"</li>
+<li>Press the "<strong>E</strong>" key on your keyboard to edit.</li>
+<li>add without quotes "<strong>iommu=soft</strong>" to the list.</li>
+<li>
+<h1 id="set-arguments-above-with-editor">Set arguments above with editor</h1>
+<div class="language-text highlight"><pre><span></span><code>    linux /boot/vmlinuz-$2
+    initrd /boot/amd_ucode.img /boot/intel_ucode.img /boot/initramsfs-x86_64.img iommu=soft
+</code></pre></div>
+</li>
+<li>
+<p><strong>Press F10</strong> to boot Manjaro.</p>
+</li>
+</ol>
+<h2 id="configuring-grub_2">Configuring GRUB</h2>
+<p>Open your terminal with the keys <strong>Super key (Windows key) + 4</strong> and do the following:</p>
+<div class="language-text highlight"><pre><span></span><code>sudo nano /etc/default/grub
+</code></pre></div>
+<ol>
+<li><strong>Add</strong> GRUB_CMDLINE_LINUX="<strong>iommu=soft</strong>"</li>
+<li>It should look like this</li>
+<li>
+<p>1 GRUB_DEFAULT=saved
+2 GRUB_TIMEOUT=5
+3 GRUB_TIMEOUT_STYLE=menu
+4 GRUB_DISTRIBUTOR='Manjaro'
+5 GRUB_CMDLINE_LINUX_DEFAULT="quiet   cryptdevice=UUID=826fc543-9373-4b18-bea5-ff6dfbb0135e:luks-826fa543-7873-4b189
+6 GRUB_CMDLINE_LINUX="iommu=soft"
+7 
+8 # If you want to enable the save default function, uncomment the following
+9 # line, and set GRUB_DEFAULT to saved.
+10 GRUB_SAVEDEFAULT=true</p>
+</li>
+<li>
+<p>Press <strong>CTRL + O</strong> to save and <strong>CTRL + X</strong> to exit.</p>
+</li>
+<li><strong>Update</strong> GRUB with:<div class="language-text highlight"><pre><span></span><code>sudo update-grub
+</code></pre></div>
+</li>
+</ol>
+<hr />
+<h2 id="explanation-about-iommusoft">Explanation about 'iommu=soft'</h2>
+<p><strong>Quoted</strong> from <strong>Tim Kennedy</strong> at https://unix.stackexchange.com/questions/469153/what-are-the-implication-of-iommu-soft</p>
+<p><em>'</em><em>iommu=soft</em><em>' tells the kernel to use a software implementation to remap memory for applications that can't read above the 4GB limit.</em></p>
+<p><em>The kernel documentation for these options is here: https://github.com/spotify/linux/blob/master/Documentation/x86/x86_64/boot-options.txt#L207</em></p>
+<p><em>What's preferable is a solution that satisfies your expectations for performance, system temperature, battery life, etc, etc. If iommu=soft give you satisfactory performance, temperature, and battery life, then I would say go with that.</em></p>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "header.autohide", "search.highlight", "search.share", "announce.dismiss", "navigation.tracking"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>

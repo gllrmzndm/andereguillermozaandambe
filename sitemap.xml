@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://guillermozaandam.nl/blog/Linux_on_ThinkPad_E585_and_E485.html</loc>
+         <lastmod>2023-11-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://guillermozaandam.nl/blog/Rsync.html</loc>
          <lastmod>2023-11-19</lastmod>
          <changefreq>daily</changefreq>

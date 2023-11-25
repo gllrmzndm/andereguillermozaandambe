@@ -18,19 +18,34 @@
 
   .image-container {}
 
-  .hero_image {
+  /* .hero_image {
     animation: grayscaleColorToggle 15s;
-  }
+  } */
 
   .hero_image {
+
+    position: relative;
+    z-index: 0;
+    display: block;
     width: 100%;
     height: 100%;
   }
 
-  .hero_image:hover {
+  /* .hero_image:hover {
     filter: grayscale(1);
-  }
+  } */
 
+  #myname {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 4rem;
+  }
 
   .spotify {}
 
@@ -99,17 +114,29 @@
     }
   }
 
-  .hero_image {
+  /* .hero_image {
     animation: grayscaleColorToggle 15s;
-  }
+  } */
 
   .hero_image {
     width: 100%;
-    height: 17vh;
+    height: 35%;
   }
 
-  .hero_image:hover {
+  /* .hero_image:hover {
     filter: grayscale(1);
+  } */
+
+  #myname {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 1.5rem;
   }
 
   .profile_picture_guillermo {

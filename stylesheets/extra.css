@@ -51,8 +51,8 @@
 
   #listeningspotify {
     text-align: center;
-    color: #f431a7;
-    font-size: small;
+    color: #0181ff;
+    font-size: 0.5rem;
 
   }
 
@@ -78,7 +78,7 @@
     margin-right: auto;
     /* border-radius: 50%;
     border-style: solid;
-    color: #f431a7; */
+    color: #0181ff; */
   }
 
   .intro_text {
@@ -147,7 +147,7 @@
     margin-right: auto;
     /* border-radius: 50%;
     border-style: solid;
-    border-color: #f431a7; */
+    border-color: #0181ff; */
   }
 
   .intro_text {
@@ -159,8 +159,8 @@
 
   #listeningspotify {
     text-align: center;
-    color: #f431a7;
-    font-size: smaller;
+    color: #0181ff;
+    font-size: 0.5rem;
   }
 
   .spotify:hover {
@@ -202,6 +202,16 @@
   --md-primary-fg-color--dark: #f431a7;
   --md-typeset-a-color: #f431a7;
   --md-accent-fg-color: #5b05a8;
+
+}
+
+[data-md-color-scheme="rallyx"] {
+  --md-default-bg-color: #fcfcfc;
+  --md-primary-fg-color: #0181ff;
+  --md-primary-fg-color--light: #747474;
+  --md-primary-fg-color--dark: #0181ff;
+  --md-typeset-a-color: #0181ff;
+  --md-accent-fg-color: #ff000d;
 
 }
 

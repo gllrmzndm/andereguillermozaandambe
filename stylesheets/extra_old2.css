@@ -18,26 +18,41 @@
 
   .image-container {}
 
-  .hero_image {
+  /* .hero_image {
     animation: grayscaleColorToggle 15s;
-  }
+  } */
 
   .hero_image {
+
+    position: relative;
+    z-index: 0;
+    display: block;
     width: 100%;
     height: 100%;
   }
 
-  .hero_image:hover {
+  /* .hero_image:hover {
     filter: grayscale(1);
-  }
+  } */
 
+  #myname {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 4rem;
+  }
 
   .spotify {}
 
   #listeningspotify {
     text-align: center;
-    color: #f431a7;
-    font-size: small;
+    color: #0181ff;
+    font-size: 0.5rem;
 
   }
 
@@ -63,7 +78,7 @@
     margin-right: auto;
     /* border-radius: 50%;
     border-style: solid;
-    color: #f431a7; */
+    color: #0181ff; */
   }
 
   .intro_text {
@@ -99,17 +114,29 @@
     }
   }
 
-  .hero_image {
+  /* .hero_image {
     animation: grayscaleColorToggle 15s;
-  }
+  } */
 
   .hero_image {
     width: 100%;
-    height: 17vh;
+    height: 35%;
   }
 
-  .hero_image:hover {
+  /* .hero_image:hover {
     filter: grayscale(1);
+  } */
+
+  #myname {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 1.5rem;
   }
 
   .profile_picture_guillermo {
@@ -120,7 +147,7 @@
     margin-right: auto;
     /* border-radius: 50%;
     border-style: solid;
-    border-color: #f431a7; */
+    border-color: #0181ff; */
   }
 
   .intro_text {
@@ -132,8 +159,8 @@
 
   #listeningspotify {
     text-align: center;
-    color: #f431a7;
-    font-size: smaller;
+    color: #0181ff;
+    font-size: 0.5rem;
   }
 
   .spotify:hover {
@@ -175,6 +202,16 @@
   --md-primary-fg-color--dark: #f431a7;
   --md-typeset-a-color: #f431a7;
   --md-accent-fg-color: #5b05a8;
+
+}
+
+[data-md-color-scheme="rallyx"] {
+  --md-default-bg-color: #fcfcfc;
+  --md-primary-fg-color: #0181ff;
+  --md-primary-fg-color--light: #747474;
+  --md-primary-fg-color--dark: #0181ff;
+  --md-typeset-a-color: #0181ff;
+  --md-accent-fg-color: #ff000d;
 
 }
 

@@ -151,10 +151,10 @@
     height: 2rem;
     border: solid;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 1000;
     letter-spacing: .5rem;
-    -webkit-text-stroke: 0.2px #000000;
+    -webkit-text-stroke: 0.3px #000000;
     background-image: url(../assets/images/illustrations/nfsheatbanner_small.png);
   }
 

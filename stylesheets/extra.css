@@ -86,6 +86,7 @@
     letter-spacing: .5rem;
     -webkit-text-stroke: 0.4px #000000;
     background-image: url(../assets/images/illustrations/nfsheatbanner_small.png);
+    box-shadow: 10px 10px 500000px -15px;
   }
 }
 
@@ -160,6 +161,7 @@
     letter-spacing: .5rem;
     -webkit-text-stroke: 0.3px #000000;
     background-image: url(../assets/images/illustrations/nfsheatbanner_small.png);
+    box-shadow: 10px 10px 50px -5px;
   }
 
 }

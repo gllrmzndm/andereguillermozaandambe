@@ -23,7 +23,7 @@
     
     
       
-        <title>Extracting and installing Windows Drivers - Guillermo Zaandam</title>
+        <title>Importing and installing Windows Drivers - Guillermo Zaandam</title>
       
     
     
@@ -69,7 +69,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Extracting and installing Windows Drivers - Guillermo Zaandam" >
+        <meta  property="og:title"  content="Importing and installing Windows Drivers - Guillermo Zaandam" >
       
         <meta  property="og:description"  content="Personal website." >
       
@@ -85,7 +85,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Extracting and installing Windows Drivers - Guillermo Zaandam" >
+        <meta  name="twitter:title"  content="Importing and installing Windows Drivers - Guillermo Zaandam" >
       
         <meta  name="twitter:description"  content="Personal website." >
       
@@ -93,7 +93,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Extracting and installing Windows Drivers - Guillermo Zaandam" >
+        <meta  property="og:title"  content="Importing and installing Windows Drivers - Guillermo Zaandam" >
       
         <meta  property="og:description"  content="Personal website." >
       
@@ -109,7 +109,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Extracting and installing Windows Drivers - Guillermo Zaandam" >
+        <meta  name="twitter:title"  content="Importing and installing Windows Drivers - Guillermo Zaandam" >
       
         <meta  name="twitter:description"  content="Personal website." >
       
@@ -171,7 +171,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Extracting and installing Windows Drivers
+              Importing and installing Windows Drivers
             
           </span>
         </div>
@@ -613,12 +613,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Extracting and installing Windows Drivers
+          Importing and installing Windows Drivers
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="windows_drivers.html" class="md-nav__link md-nav__link--active">
-        Extracting and installing Windows Drivers
+        Importing and installing Windows Drivers
       </a>
       
         
@@ -744,10 +744,10 @@
                   
 
 
-  <h1>Extracting and installing Windows Drivers</h1>
+  <h1>Importing and installing Windows Drivers</h1>
 
 <p>I needed a way to drivers from this particular HP Probook 455 G9 and this was the best solution to achieve this. <code>pnputil</code> can be launched from almost anywhere, it is built into Windows directly. It's stored in <code>windir%\system32</code>.</p>
-<p>Extracting the correct drivers from a laptop important in case you need the exact drivers, but you can’t download them from anywhere or/and you don’t trust other sources the get the drivers. All drivers are imported directly from the computer.</p>
+<p>Importing the correct drivers from a laptop important in case you need the exact drivers, but you can’t download them from anywhere or/and you don’t trust other sources the get the drivers. All drivers are imported directly from the computer.</p>
 <p>If you're doing a clean install of Windows, let Windows download the drivers through Windows Update. to get the actual drivers.
 Obviously you should using driverspacks or HP software to install all thes drivers.</p>
 <h3 id="pnputil">Pnputil</h3>
@@ -762,7 +762,7 @@ Obviously you should using driverspacks or HP software to install all thes drive
 <p>`pnputil /export-driver * "d:\drivers\g9_455"</p>
 <p><code>pnputil</code> is the program, next, is the option to import the drivers, we want all drivers and after that is the full path. You can change the path to something else.</p>
 <h2 id="install-or-restore-all-drivers">install or restore all drivers</h2>
-<p>`pnputil /add-driver "d:\drivers\g9_455*.inf" /install /reboot /subdirs</p>
+<p><code>pnputil /add-driver "d:\drivers\g9_455\*.inf" /install /reboot /subdirs</code></p>
 <p><code>pnputil</code> is program, next is the option to install the drivers, full path with different options that are required to install the drivers.</p>
 <div class="admonition success">
 <p class="admonition-title">Done</p>

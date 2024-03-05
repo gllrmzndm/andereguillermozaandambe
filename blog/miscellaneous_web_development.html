@@ -1037,13 +1037,16 @@ We’re underusing HTML and CSS: This is partly due to IE support, but now that 
 <p>Evaluate your toolset: Many newer tools have better performance baselines compared to older ones, and not every project needs to be an SPA. Some of the non-framework-based SSGs like Hugo, Jekyll, or 11ty work great for those use cases.</p>
 <p>Build for modern browsers: Drop IE support and set your build target to ES 2017 or even 2018. Just doing that might get you bundle size improvements of up to 20%.
 Consider a11y from the beginning: Having a11y in mind from the planning and design stages is the ideal scenario. Starting by improving things such as contrast rates, font sizes, semantic HTML usage, and keyboard navigation can make a great difference.</p>
+<hr />
 <h2 id="miscellaneous">Miscellaneous</h2>
 <p>Understanding pixels and other CSS units
 https://webplatform.github.io/docs/tutorials/understanding-css-units/</p>
+<hr />
 <h2 id="web-design">Web design</h2>
 <p>https://webflow.com/designer</p>
 <p>https://www.editorx.com/</p>
 <p>https://www.figma.com/</p>
+<hr />
 <h2 id="design-languages">​​Design Languages</h2>
 <p>Airbnb: https://airbnb.design/building-a-visual-language/
 Apple: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/
@@ -1071,14 +1074,19 @@ Elements – Style rules for bare HTML elements (like h1 or button).
 Objects – Style rules for elements responsible for layout or structuring.
 Components – Style rules for UI components.
 Trumps – Helper or utility rules that tweak Objects or Components by adjusting and override existing rules.</p>
+<hr />
 <h3 id="bem-blocks-elements-and-modifiers-form-the-patterns-that-the-bem-convention-uses-for-naming-css-rules">BEM Blocks, elements, and modifiers form the patterns that the BEM convention uses for naming CSS rules.</h3>
 <p>BEM is a CSS naming convention designed to emphasize relationships among CSS style rules.</p>
+<hr />
 <h3 id="test-driven-development">Test-driven development</h3>
+<hr />
 <h4 id="unit-testing-framework">Unit testing framework</h4>
 <p>https://www.wikiwand.com/en/List_of_unit_testing_frameworks</p>
+<hr />
 <h4 id="html5-boilerplate">HTML5 Boilerplate</h4>
 <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
 <p><code>npx create-html5-boilerplate new-site</code></p>
+<hr />
 <h2 id="what-are-npm-yarn-babel-and-webpack-and-how-to-properly-use-them">What are NPM, Yarn, Babel, and Webpack; and how to properly use them?</h2>
 <p><em>NPM stands for Node Package Manager. It is what its name describes. It is a package manager for Node based environments. It keeps track of all the packages and their versions and allows the developer to easily update or remove these dependencies. All of these external dependencies are being stored inside a file called called package.json. The initial file can be created easily using CLI npm init (assuming NodeJS is installed in the system). When you install a package using NPM, the packages get downloaded from a dedicated registry. There are lot of features of NPM like publishing. If you like to learn more about NPM, check out the links at the bottom.</em></p>
 <p><em>Every language that we use has some form of package manager, either official or a 3rd party one. PHP has Composer, Python has PIP/Pipenv, Java has Gradle etc.</em></p>
@@ -1087,6 +1095,7 @@ Trumps – Helper or utility rules that tweak Objects or Components by adjusting
 <p><code>sudo npm install -g yarn</code></p>
 <p><code>yarn add --dev webpack @babel/core babel-loader @babel/preset-env node-sass css-loader sass-loader style-loader postcss-loader autoprefixer</code></p>
 <h4 id="webdev-css">Webdev CSS</h4>
+<hr />
 <h5 id="css-units">CSS Units</h5>
 <p>Common Length units</p>
 <p>But before we start it actually depends on what you want, there's no good or bad. (Read the whole document Guillermo)</p>
@@ -1099,6 +1108,7 @@ vh and vw - Many responsive web design techniques rely heavily on percentage rul
 <p>vmin and vmax - These units are related to the maximum or minimum value of vh and vw. For example, if the browser was set to 1200px wide and the height 600px, 1vmin would be 6px and 1vmax would be 12px. However, if the width was set to 700px and the height set to 1080px, vmin would equal 7px and vmax 10.8px.</p>
 <p><strong>ex and ch</strong></p>
 <p>ex and ch - These units, similar to em and rem, rely on the current font and font size. However, unlike em and rem, these units also rely on font-family as they are determined based on measures specific to each font. The ch unit (“character unit”) is defined as the width of the character zero (“0”). The ex unit is defined as “the current x-height of the current font or the half of 1em”. The height-x of a given font is the height of the lowercase “x” of that font. It is often the middle mark of the font.</p>
+<hr />
 <h2 id="css-style-guide">CSS "Style guide"</h2>
 <p><strong>px</strong> for borders and box shadows; it's for decoration it's not required for readability.
 If a user sets a very large font size for themself, you don't necessarily want this stuff cluttering up the screen.</p>
@@ -1108,6 +1118,7 @@ If a user sets a very large font size for themself, you don't necessarily want t
 <em>A caveat for something that has width: 100vw; height: 100vh. The viewport units DON'T take scrollbars into account. So if you do the above and have a vertical scrollbar because of content overflow, you'll also get a horizontal scrollbar that scrolls the exact width of the vertical scrollbar. In this case, often width: 100%; height: 100vh; might work.</em></p>
 <p><strong>ch</strong>
 <em>ch is a great unit. Studies have shown in the past that it's easiest for humans to read paragraphs that are between 50-70 letters across in width. So I often have a rule of something like p { width: 60ch; } or similar.</em></p>
+<hr />
 <h3 id="thoughts-and-comments">Thoughts and comments</h3>
 <p>https://gist.github.com/basham/2175a16ab7c60ce8e001</p>
 <p>https://graphicdesign.stackexchange.com/questions/153807/why-would-i-ever-not-use-percentage-for-sizes</p>
@@ -1117,9 +1128,11 @@ If a user sets a very large font size for themself, you don't necessarily want t
 <p><em>For most users (and browsers), a font-size of 100% would default to 16px unless they change the default font-size through their browser settings. It’s rare that anyone would do that though."</em></p>
 <p>https://zellwk.com/blog/rem-vs-em/</p>
 <p>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries</p>
+<hr />
 <h5 id="devices-resolution">Devices resolution</h5>
 <p>https://yesviz.com/devices.php</p>
 <h4 id="webdev-stylguides">Webdev stylguides</h4>
+<hr />
 
 
   
